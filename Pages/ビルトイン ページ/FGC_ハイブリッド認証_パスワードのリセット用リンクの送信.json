@@ -405,7 +405,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "FGC_ログイン"
+            "PageName": "FGC_ログイン_ハイブリッド認証"
           }
         ],
         "Text": "ログイン",
@@ -449,6 +449,7 @@
     },
     "SheetStyle": {
       "FontFamily": 0,
+      "FontSize": -999.0,
       "Underline": false,
       "Strikethrough": false
     }
@@ -460,7 +461,7 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MobilePageName": "FGC_パスワードのリセット用リンクの送信_モバイル",
+    "MobilePageName": "FGC_ハイブリッド認証_パスワードのリセット用リンクの送信_モバイル",
     "Title": "パスワードを忘れた場合",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
@@ -486,4 +487,4 @@
       "Size": "400,360"
     }
   ]
-}//+jZHW/i6gU+H+epvICNYubMBDBaLDxOL1bhtU3Lr6h3l/C3/tgfvGAHYGuKLour8VdIpq7ePRR3HQukS3JE6680T/yevWuWeBcVi11ewqGN9XJSVc0A6WWTHrKPM6QlExW/WeugMYoUubMJ15C/tIuieNoCZCKnhyRumj5Oqda+kc8fQts2g/LaKOBo7t+gS3+oQ8FNgS4jck3tR1H2NED0cgrSZZSauo+i/BD7XJaJ4enTI6wVn1A1hw5j3X7XgByuusSerdK68K4TQoyl9+j2wWr6hsU23ZV7gMchPBAY0aV5oT9KTV/LCvsCy6DNQO3g3plOPS0bsswofzMCVw/tHKaVqMWhOKHoU79AeONf8rYUPh5zECTzYH7D+rdJ1nZ42Oif2vXKxqyXBoskh67cxmATJljT8wU11XQiPTUTvIS/TFmlaPBpkoHWyJqk7R1ZOIUCEZzdRVdruo130qMEPLvSLgUL7YxT7pIx+vkMmh5a8KJuTQvWLWW2UGMykRVGz8SqTRpSh2dyBWGvUcSb9nDEjOdMGazb7PbayjjiPKR+15kVt6AO++vPxMdGniILnqVDp/iPcmSl5Bimr7nv96IVro7ZZqaXcQd2pKEwyF1kibppok4JEq9p8n2BqhM439UqRqiZQ2P+p+OvLGiWD/q5tUQkMBRwOMbLD2o6F8Go2HvP71zLJ5zdUTFt92BWqvwJUIuJtiPPx17Gwwy5pmxXUo6XCKi3nZW0TkuU+eOLr1PM6jq+jOCKiCdpyIZ+M1oUJ9yDEDTuhkMduvieDAb4tnKjI0uHO9UUztYzgjOP12Lmo4lQJuk/8ixIN0OemlPEbNnPGXfKdErIaosC6MMfVYR/VXlEf46dVi9hGX5iRT6HYSU7f07JjeFYiua1wPvV0gaMWG6G4BgYhUg==|920
+}//wSmIMwaml8ALFC0cWbeC5PaXZSvpA4VY9XaqizXcuTfTvRiwQJXqwOn2SUqB2N42YU3NsYoSzrYBSca7o3eL6NEFujOTePymG9sEnv72QXdCKiKOiI0cRNNzSGDwHgM51PppmlwwGj2xD0Rfv9zAls0e+fwq6a7NSnDLQVXDo2qn+slSqd/J0V+5O3H95wMweF/wwtVCL2QBg62I/KwfL3Tm9JbBR5ALpyxVqcB3H+ByZj/IP5JK1ksETT8YnLRIJS5Mz9+EzaiNyUemBuuOSZH3y8T5adp46YGVF+H/Dd68GPlHYZ5QK6pSzFDnshZ4jJlt7ovbdC49LnXhfdH7/RftSJv3bRBMyLi439jy4KPOjcIoI8kTnC45U7CI7EKinWS+tLYvACuWWXu4dpLxJ/sVzmm4RugPD2Yk0IPfkQzJ7wF6e9TMZFEH/gV/Yc4s0UMUFWTPac3trbX4ozruWGJPWTXmJWE0dszdovsB/bFmU0XyeIDg0wbgQw4QMIhmZwu9JeTrWAsTYQ9pvZN96pug2TvTFgwwu62V6nHvEMkoncSbuRl5MeJU+h4QX12nriLkHmX5/lfBIgRGjALdOcCa1G2ha9dK6SfHcjGElN5S/mpUJTPYzKrWu4b2F8n3iTmgIBWkXzAQ0wZoDsNgGYFeEEvkAa0tRa+eiALb68I6V/kBqzt3F8/IPIiPpMLFnrPpAz4KcI74AjvVkOuuPy7v33lGpLZsQN/IQRu5H5T5deul4qp9ELUP2OKSbXOkCx+3NKXON8oo3H4Vi7PyiQDc0KCeWpEHBKHzQF5tOH1eED+uoxCO5BIfL62FKWD7hVYuEtM2GpHlaV8y370phL+VZGCXqHWVMev/L9HrD9HpGIvlClbPsT/Q5nCskDpJS8b8b88yVEnJ6IvcsJsBvw==|920

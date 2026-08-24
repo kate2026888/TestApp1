@@ -23,7 +23,17 @@
           "DesignLengthInPixel": 30.0
         }
       },
-      "33": {
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "36": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "Mode": 2,
@@ -36,7 +46,7 @@
         }
       }
     },
-    "Count": 35
+    "Count": 38
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -529,12 +539,14 @@
     "14,25": "パスワード",
     "20,25": "ログイン",
     "23,25": "パスワードを忘れた場合",
-    "25,22": "Administratorアカウント",
-    "25,33": "Administrator",
-    "26,22": "パスワード",
-    "26,33": 123456,
-    "29,23": "すべてのシゴトをデータで繋ぐ。",
-    "31,23": "基幹システムと連携できるノーコードWebアプリ開発プラットフォーム"
+    "24,30": "または",
+    "26,25": "SSOでログイン",
+    "28,22": "Administratorアカウント",
+    "28,33": "Administrator",
+    "29,22": "パスワード",
+    "29,33": 123456,
+    "32,23": "すべてのシゴトをデータで繋ぐ。",
+    "34,23": "基幹システムと連携できるノーコードWebアプリ開発プラットフォーム"
   },
   "AttachInfos": {
     "6,25": {
@@ -617,6 +629,15 @@
         "ClickMode": 1,
         "TemplateKey": "_RS_Main"
       }
+    },
+    "26,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "SSOでログイン",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Minor2",
+        "ForguncyAttribute": "LogIn_SSO_Button"
+      }
     }
   },
   "StyleDatas": {
@@ -629,40 +650,67 @@
       },
       {
         "FontFamily": 0,
+        "FontSize": -999.0,
         "Foreground": 2,
         "Formatter": 3
       },
       {
         "FontFamily": 0,
+        "FontSize": -999.0,
         "Formatter": 4,
         "TextIndent": 0,
         "HorizontalAlignment": 5
       },
       {
         "FontFamily": 0,
+        "FontSize": -999.0,
         "Foreground": 6,
         "Formatter": 4
       },
       {
         "FontFamily": 0,
+        "FontSize": -999.0,
         "Foreground": 2
       },
       {
         "FontFamily": 0,
-        "HorizontalAlignment": 7,
+        "FontSize": -999.0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": -999.0,
         "Underline": false
       },
       {
+        "Foreground": 7,
+        "BorderBottom": 0
+      },
+      {
         "FontFamily": 0,
-        "FontSize": 13.333333333333332,
-        "Foreground": 8,
-        "Formatter": 3,
-        "HorizontalAlignment": 9
+        "FontSize": -999.0,
+        "Foreground": 2,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": -999.0,
+        "Formatter": 3
       },
       {
         "FontFamily": 0,
         "FontSize": 13.333333333333332,
-        "Foreground": 8,
+        "Foreground": 7,
+        "Formatter": 3,
+        "HorizontalAlignment": 10
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 7,
         "Formatter": 3,
         "HorizontalAlignment": 5
       },
@@ -673,14 +721,14 @@
         "FontFamily": 0,
         "FontSize": 18.666666666666664,
         "FontWeight": 1,
-        "Foreground": 10,
-        "VerticalAlignment": 11
+        "Foreground": 11,
+        "VerticalAlignment": 12
       },
       {
         "FontFamily": 0,
         "FontSize": 13.333333333333332,
-        "Foreground": 10,
-        "VerticalAlignment": 11,
+        "Foreground": 11,
+        "VerticalAlignment": 12,
         "WordWrap": true
       }
     ],
@@ -693,11 +741,17 @@
         "@",
         "Left",
         "Text 1 15",
-        "Center",
         "Background 1 -50",
+        "#FFDCDFE6",
+        "Center",
         "Right",
         "Background 1 0",
         "Top"
+      ],
+      "Borders": [
+        {
+          "Color": 8
+        }
       ]
     },
     "CellStyles": {
@@ -707,38 +761,62 @@
       "14,25": 1,
       "15,25": 3,
       "18,25": 4,
-      "23,25": 5,
-      "25,22": 6,
-      "25,33": 7,
-      "25,40": 8,
-      "26,22": 6,
-      "26,33": 7,
-      "26,40": 8,
-      "29,23": 9,
-      "31,23": 10
+      "20,25": 5,
+      "20,39": 5,
+      "21,24": 5,
+      "21,39": 5,
+      "23,25": 6,
+      "24,24": 7,
+      "24,25": 7,
+      "24,26": 7,
+      "24,27": 7,
+      "24,28": 7,
+      "24,29": 7,
+      "24,30": 8,
+      "24,34": 9,
+      "24,35": 9,
+      "24,36": 9,
+      "24,37": 9,
+      "24,38": 9,
+      "24,39": 9,
+      "26,25": 10,
+      "26,39": 5,
+      "27,24": 5,
+      "27,39": 5,
+      "28,22": 11,
+      "28,33": 12,
+      "28,40": 13,
+      "29,22": 11,
+      "29,33": 12,
+      "29,40": 13,
+      "32,23": 14,
+      "34,23": 15
     },
     "SheetStyle": {
-      "FontFamily": 0
+      "FontFamily": 0,
+      "FontSize": -999.0
     }
   },
   "Spans": [
-    "20,25,2,14",
+    "6,25,2,6",
+    "6,32,2,9",
+    "32,23,2,18",
+    "34,23,2,18",
+    "28,22,1,10",
+    "29,22,1,10",
+    "28,33,1,7",
+    "29,33,1,7",
+    "24,30,2,4",
     "11,25,2,14",
     "15,25,2,14",
     "18,25,1,14",
     "23,25,1,14",
-    "6,25,2,6",
-    "6,32,2,9",
-    "29,23,2,18",
-    "31,23,2,18",
-    "25,22,1,10",
-    "26,22,1,10",
-    "25,33,1,7",
-    "26,33,1,7"
+    "20,25,2,14",
+    "26,25,2,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MobilePageName": "FGC_ログイン_モバイル",
+    "MobilePageName": "FGC_ログイン_ハイブリッド認証_モバイル",
     "Title": "ログイン",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
@@ -758,7 +836,7 @@
         "Fill": null
       },
       "IsAutomaticFill": false,
-      "Size": "1280,720"
+      "Size": "1280,780"
     },
     {
       "Name": "BackgroundPicture0",
@@ -771,7 +849,7 @@
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
       "Location": "440,80",
-      "Size": "400,500"
+      "Size": "400,560"
     }
   ]
-}//y+BNbsWnYkJuD5FarcqWt0wLcOzd9R1CNqTqzQ2a6Jz45E6ta2qE8JYIvWmw+xEcqFBldxwf0g46wf9oEHqrIap2Ig7csNf2xncKsRY1YC+VmaMMsMY0VGkEo5Ee7Iq3EvsVljohYOJpaqvckExXOHGlAyUqjUuffVx0sd9VtAiIWCVsGZhgqcwqDI1Ct7ao80N4YXK5R4kCDm/iD9jBbZKE7qIBqS+90JKy9zz9CJU7p4a1xMubu22VpSvlifHJ2Hrq+BL3vpt4cEDeLygITJr18mxgI3zkzhS3rvm0Sn6P8qb7D89guqyq/2+E5WSYOlrhhbLFGK7rgOvTnwZ1ENizoA3keKNEXMfiqfanyVaQ78/VXtTcVMflbdOW8TW9F5QyT9HOrQ+7Eb2FBZX5OmK9tDbDnCgwcUVyXPWdEEuej7s7DsX4pU7UVvHHIuQEjo5g1AP9gfhCK6SlW91yS0S4WZXeRTvhDgueAfKyEv1jHjHL1mZnXBO0eDf0jVW2XRojxf2OdlZ5CT5p8geSLk8km7SjLHLVk2GHsJJILs/3AWSOwUI4ONk3Af3/hgsh6zMKdIAbV8GaidR0LzIDwgg+FgrIrvqgxRTTgmIq8GZzCrPft0f11YyRkAfkty4hXOmBSruNKZr45FzI/kHvAc0lRx7mHZr7IGIytXW7L8FYAak4gqqVoiZDV4oew6djGtBaYNthBav0mItEnKJ7yJCigxxC5JpsGRamVk++46UvlXNyMwJRtR0zJrq4BaUKkWdWD6eNDr1l4Z5mooHpbsy0YM6x3qm2vZ2tELzUMpNb/odH2/7qMtlubXBlFLDK+oyCtIwsV7a468Pm/nglcaGGirGXG1I/g3/jDvh5IvvGnZJ0ME85KzEJGFgfB8mamB7BMEjQEtu+cbB/jDmG0Q==|920
+}//a9i6rgsUCxrDTMN7hrSqCcChb5W8nsflYwQq8RcEXSxbevNj9ASc4wJhBWBL0IlgFdOQnwf442z1t+wdMQDPvP6Kw6hHhpRup6ZzzCkNA/agHAoPAAmLcyf3Wcrkmw/30Xqn/hVUAsvQ5ALCe1uTm38rDJj8oCt8rTnPcABX76mKNehuqvsJ40QeMeJoRPr1uOlCDlFw4rUnS2EwnviL2FCHv7gb8uO/780AU9AO6SXySdM8Wxp0JXuIBkIaE4J2AMZBgEtSHBFHzxWobHXJM4RLHlxQCI4qBbem34Ld4GYYhQME6kEuzrBoqBEDJ3kejPRpbOs3aqFuzC9rg0gyaScoQwlqCUFy7gbvGRgYGVCwtuH4Fn4WCGfwbgKE/XDHrDNPexnoRlLrHJN7mo5L2ZmAlAj5s9Uz5O9D63A/GBJ/1ckTsLb54owfdU2dtLxm5jxOoqzhqB85498EWcB1TreEsDTlCoKQKt8BOAgz9oZ5kfn0CWA7LzJLcYtbp5BWIPwoC417G6h3hTMD0Z9kpBEAY9YNYAyiWJyp4mRqP9yz2aOyK74Hty30qIbgXyK2DfEXW5I8gIiRj1Z1jtLmH9E+X3FcDMCytx5oKtv8/bohHumXNOOCJ8FtbLjErzneqvK/OtG/T7DyCa+3qbawEmICz21tAlNpRG8CMrDS7xoL6vcsAMxxkAh5qu+2yXyF0z8Oyo9+ilYGhaK1dUHaUymy6HquxmyMdm81S6t8fPpxdzFm38bOuVnvAxfI1viPM0ddpzdJr0NUB0TWZTY+nrKCoW9QvnPg2ZwfmVZjh5iF0qwkC6lO2/wDNrjKy7gl0AhcQ011v4pC2fEFhzJiftGZIXC6RsCRvA3GNI8rQtB+2oNNayH3WlQoL/3ViMul85XKqlnkfJcRg0YuQ3d7GQ==|920
