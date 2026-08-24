@@ -1,0 +1,189 @@
+{
+  "Rows": {
+    "Count": 1,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "Count": 44
+  },
+  "Values": {
+    "0,20": "$",
+    "0,39": "View detail"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "TemplateCellSource": "ID"
+    },
+    "0,6": {
+      "TemplateCellSource": "Date_and_Time"
+    },
+    "0,15": {
+      "TemplateCellSource": "total_amount"
+    },
+    "0,27": {
+      "TemplateCellSource": "status"
+    },
+    "0,39": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "orderID",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='19dfe599c0ca4d87973dbbebb1b761e'!A1"
+            },
+            "ID": "f7acad739228469d830a04b6e2f7fd09"
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "Order confirmation"
+          }
+        ],
+        "Text": "View detail",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 21.333333333333332
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "Foreground": 2,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0
+      },
+      {
+        "FontSize": 21.333333333333332,
+        "Foreground": 3,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontSize": 21.333333333333332,
+        "Foreground": 5,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Foreground": 5
+      },
+      {
+        "FontSize": 21.333333333333332,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontSize": 21.333333333333332
+      },
+      {
+        "FontSize": 21.333333333333332,
+        "HorizontalAlignment": 4
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontSize": 16.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontSize": 16.0,
+        "HorizontalAlignment": 7
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "yyyy/MM/dd",
+        "Body",
+        "Blue",
+        "#FFC00000",
+        "Center",
+        "black",
+        "Right",
+        "Left"
+      ]
+    },
+    "CellStyles": {
+      "0,6": 0,
+      "0,27": 1,
+      "0,28": 1,
+      "0,29": 1,
+      "0,30": 2,
+      "0,31": 2,
+      "0,32": 2,
+      "0,39": 3,
+      "0,40": 4,
+      "0,41": 4,
+      "0,42": 4,
+      "0,43": 4
+    },
+    "ColStyles": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "5": 5,
+      "6": 6,
+      "7": 6,
+      "8": 6,
+      "9": 6,
+      "10": 6,
+      "11": 7,
+      "15": 8,
+      "16": 8,
+      "17": 8,
+      "18": 8,
+      "19": 8,
+      "20": 9,
+      "27": 10,
+      "28": 10,
+      "29": 10,
+      "30": 10,
+      "31": 10,
+      "32": 11,
+      "33": 12,
+      "34": 12,
+      "38": 13,
+      "39": 14,
+      "40": 14,
+      "41": 14,
+      "42": 14,
+      "43": 14
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "0,15,1,5",
+    "0,0,1,3",
+    "0,27,1,6",
+    "0,6,1,6",
+    "0,39,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "My order"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//vkb/q/51YkWi1hvK16sDuXt8xbkLptQ9ttyA0GKV0KjeRXM/V+avAFFOEoJHSmSaO/mi4bmRbgQMNs8/KvmPa/YrF2Kk8i2kSMq80qQ7uZbgEZLD7falRQFBCf0lfoqGpzWNtphR5yMzK+OPDN70Y50xiuYgzG82IN31RcKWkhQvrWeLo97O377gNOYOkzESNoSGSU9/p7urlsHcZeUtouGUq+VkGfZWZza4j1nIm8ziiHHs316Sss6yFLLhCNJcfTQB0f+YJZwqIcbeMSKe6NRW6aysT12lnmf29Xt/uK2VArdwqgs7KViEXn7sqFIDxZnz18FsXwG+b4otRL5LtWIoUDpdBzTNTUlUqUD2QM08dPu3ueHTJF/ECGmV8Zz9GkKwU9biprJcVg6RDsrzrE7VkzpehcrZr2cVBTF/igfEEy/o8rBFcKn0mZslGV47Z6OuQ8+UH9r/KP2N8AJis4xGAV6YIXW+TFFQPKS9wReDemYKWMePyxxUZKSKvnvrXaGNizy825CSDpa+omPAjPWPk+NVA9S9tVhxlUC2XZW1Ot8oPx3hUripTJH7wf4nb5eMjot9bN6VaXbsQRUvsfh0Wui3TriJ1dk+8JhpOs9V7Az9BZS+Mj3JJ+lmv/lVOQhrklyiMAoedQm1oydsNm98i7LDKZSkxZs9xy88ytamV4qpA+mYNDtSncnnBpnsT4KsV5veUKEc6S+rrFoxKTA+SzIfY0bAW2FGmM8qwMT2s15OtZtuiN7l53molGsyu30N0wJHn9jnf7V8qvA3opmod0wA0+CJ4XWcpSxQDoduiYjb2AusvUCjdebzUTIv3eBTabHTc2KEGRcb8yVJK6tw5T29pA//ygsjsb5wjNOWdmL7GVNMuw9G32pI/ajwAtUvAX6n2HjsDRIDUvl0eA==|920

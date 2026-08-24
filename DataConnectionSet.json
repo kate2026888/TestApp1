@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ConnectionString": "UPiS0OwK3zel+OYpgHgIE6/SZi1JkPeIyBjlSuLZm9GLwhrBgZqJbsz5ADTeSgLtV5o/gtOXmvLraxEl/2HPJ8uCeFtt2bDdrJb17GxHj9Uzc7CHsrbaXuaxDH+UCP8ngFKWxN2fkdtiDRluIrwg5Z58+NXsD/cer6bMSeFtdJ4+aLMAXl6Ou3sdPReTh0Da",
+    "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
+    "ID": "SqlServer222"
+  },
+  {
+    "ConnectionString": "9Y8Gt1WJlsuGVUqKN1QnJy3wVpMB5wpwJnZMOzfjSyhSS7phQ8Od/anI2mEUWtr9br3UWuDvntQ8AhhtVLrk57vBOX6DdGRmjj6sTntaK/Q=",
+    "DataBaseType": "cbdb540e-ded5-415e-b8cd-5b1dba43a89e",
+    "ID": "test1Oracle1"
+  }
+]

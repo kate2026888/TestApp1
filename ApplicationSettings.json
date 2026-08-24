@@ -1,27 +1,66 @@
 {
   "IntegrateWithOtherApplication": {
-    "Password": "*@q4DS83Fizb"
+    "Password": "wiNA8HFF89Lb"
   },
   "ShareCommandContainers": [],
   "ListviewLoadingIndicatorSettings": {},
-  "GlobalProperties": [],
-  "WebSitePort": 31836,
-  "UserServicePort": 27972,
+  "IsPageInContainerBackgroundHardCodeWhite": true,
+  "GlobalProperties": [
+    {
+      "Name": "newest_order",
+      "Value": ""
+    }
+  ],
+  "WebSitePort": 33306,
+  "UserServicePort": 16267,
+  "NotAllowModifyDatabaseByJsApi": false,
+  "NotAllowQueryDatabaseByJsApi": false,
+  "ExecConcurrentScheduledTasks": false,
   "StartDateFiscalYear": 4,
   "BaseOnStartingMonth": true,
+  "FocusMoveMode": 0,
+  "CellTypeSpinInfos": [
+    {
+      "CellTypeFullName": "Forguncy.DropDownListCellType",
+      "SpinType": 5
+    },
+    {
+      "CellTypeFullName": "Forguncy.NumberCellType",
+      "SpinType": 5
+    },
+    {
+      "CellTypeFullName": "Forguncy.DateCellType",
+      "SpinType": 5
+    },
+    {
+      "CellTypeFullName": "Forguncy.TimeCellType",
+      "SpinType": 5
+    },
+    {
+      "CellTypeFullName": "Forguncy.UserCellType",
+      "SpinType": 5
+    }
+  ],
+  "SuppressedWarningMessages": [
+    "Products->name, The type of related column does not match. Please check [Products]->[name] and [CartItems]->[product_id] to make sure the column type is same."
+  ],
+  "KeepMasterPage": false,
+  "MaxRowCount": 5000,
+  "NameConflictPolicy": 1,
+  "AuditingList": {},
   "MultipleLanguageSettings": {
     "Languages": [
       {
         "Name": "ja",
-        "IsDefault": true,
-        "Description": "組み込みの日本語は削除できません。",
+        "Description": "Built-in Japanese language, cannot be deleted",
         "IsBuildIn": true,
         "LanguageAttribute": "ja",
         "FontFamily": "Body"
       },
       {
         "Name": "en",
-        "Description": "組み込みの英語は削除できません。",
+        "IsDefault": true,
+        "Description": "Built-in English language, cannot be deleted",
         "IsBuildIn": true,
         "LanguageAttribute": "en",
         "FontFamily": "Calibri"

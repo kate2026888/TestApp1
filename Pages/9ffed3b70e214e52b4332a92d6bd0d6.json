@@ -1,0 +1,243 @@
+{
+  "Rows": {
+    "Count": 6
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "Count": 41
+  },
+  "Values": {
+    "2,36": "stock"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      },
+      "TemplateCellSource": "product_id"
+    },
+    "2,7": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "Product detail"
+          }
+        ],
+        "Text": "",
+        "ClickMode": 1
+      },
+      "TemplateCellSource": "name"
+    },
+    "2,20": {
+      "TemplateCellSource": "price"
+    },
+    "2,26": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "SpinButtonvisibility": 0,
+        "TemplateKey": "Style1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='9ffed3b70e214e52b4332a92d6bd0d6'!AA3"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "='9ffed3b70e214e52b4332a92d6bd0d6'!AN3"
+                  },
+                  "compareType": 2
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "CartItems",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "CartItems",
+                        "ColumnName": "product_id",
+                        "GUID": "05df6091-dee7-4abd-a1b5-1d0b68077161"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "='Shopping Cart'!BE41"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "CartItems",
+                          "ColumnName": "quantity",
+                          "GUID": "04d5ff56-161e-404c-bb53-0544fdebaaa4"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='9ffed3b70e214e52b4332a92d6bd0d6'!AN3"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "87b18afd-04fb-4b44-83d2-45a2a1d70b8f"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "CartItems",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "CartItems",
+                        "ColumnName": "product_id",
+                        "GUID": "cd6468b5-28f9-4803-9259-59295faf6507"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "='Shopping Cart'!BE41"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "CartItems",
+                          "ColumnName": "quantity",
+                          "GUID": "2499bd2d-5f57-4560-932a-1da7df47ae5a"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='9ffed3b70e214e52b4332a92d6bd0d6'!AA3"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "bb27985c-1d7a-49e0-a29d-e9c574a43c21"
+              }
+            ]
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "NumberType": 1,
+        "CompareParamType": 7,
+        "FirstParamValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "='9ffed3b70e214e52b4332a92d6bd0d6'!AN3"
+        },
+        "ErrorMessage": "Exceeds stock!"
+      },
+      "TemplateCellSource": "quantity"
+    },
+    "2,32": {
+      "TemplateCellSource": "Total"
+    },
+    "2,39": {
+      "TemplateCellSource": "stock"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "Foreground": 0,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "Foreground": 4,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Blue",
+        "Body",
+        "Left",
+        "Center",
+        "#FFFF0000",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,7": 0,
+      "2,20": 1,
+      "2,25": 2,
+      "2,26": 3,
+      "2,31": 2,
+      "2,32": 4,
+      "2,35": 4,
+      "2,36": 5,
+      "2,37": 6,
+      "2,38": 6,
+      "2,39": 6,
+      "3,25": 2,
+      "3,31": 2,
+      "3,35": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "0,0,6,6",
+    "2,20,2,5",
+    "2,26,2,3",
+    "2,32,2,3",
+    "2,39,1,2",
+    "2,7,2,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "Shopping Cart"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//UijJZdZOZrmbUgC+asDyId9ekGQ8mxKEjDis2LRYBljbW/BWsu1z2LmKx6sW4HIV6IJ1vGFSbkSc1mLu9ywr8kqXfzNE8Ksaqh6mokpkzX0dA51LsLvuoyEAxqCryfH9OZ5ZO/zJUAQmEgSMhw2Z2yGUEulFS5IgnkMq+QBntCoFrYR0VE996LE3l7gq8Jn8gN4OnpkcmzKldqXc3RAtgFGdMF74UFBrPrTG/u6A4v7CBl2tqqgwUh3O9Q5xrf5JQ1MZHabXJokANp7snZ5ZbHUIDQDDeHOMXfFU4i0ogKOrF0QGJAlQNevT+oHEyuOh0tBJpUxbCsOpxjjAxoVGcmssl+apeI5sHtxY0/w3uWiDR3t/6BXxgnwmrjeK0VqvuE6ise0IoGwbEVxUW9GB2sIhNxB2C0GICYTvmg/9c77DZCHyyYicDHjYKCyIFnilOVDV8kGCd1hvqMkaORj+9+zBzlrP+0RttH7BSJugqHE36Egr4hVYw5HwjLRt2Kbf+nX78xKDK8miGSj2t4n2S0fsUPEnMzrqb3ynvJ86sTIqXF9bI+OaCnFoc+nF7cGowpgSKrlr917puco9AdlivRv7CCO03C2PqgC44pPvD4K/dCHaF1neQMRrrhXJfg2v7UtqSS8QplOq0B/DMnDV79wlrpKdP6YB/4q+YqzyKDqG/7SJqgb6ULnAqdrPCXtV/uq62BCc2wLJbQOAJjmiyqvenNMddytRHcsFZ5y/t3GYsKsgqn9oqOR9fIwCZy8bYWGbHeH1iig0gKptFNDVRUgU6VHRyrcZuGR8lsPqMfk3+D6crs+aQ21ASbh3w2XZOn/raL7xMT/IfVVQ1/x6j2lpw8Ieyc3fkVXzpO4ExGslOfoey70IzG48fSWg43mUOEQWJsVxjIL02YPqY8GBcA==|920

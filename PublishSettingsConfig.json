@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "Name": "Publish Settings1",
+    "ApplicationUrl": "http://localhost:22345/inconsistency",
+    "PublishSettings": {
+      "IsPrivateServer": true,
+      "ServerName": "localhost",
+      "UserName": "Administrator",
+      "SitePort": 22345,
+      "AppName": "inconsistency",
+      "AppStartPage": "",
+      "TakeServeronline": true,
+      "PublishRolesToServer": true
+    }
+  }
+]

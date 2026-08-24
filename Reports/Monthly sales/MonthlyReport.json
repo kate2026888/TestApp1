@@ -1,0 +1,136 @@
+{
+  "Name": "MonthlyReport",
+  "DataSources": [
+    {
+      "Name": "DataSource2",
+      "GUID": "786b4718-e17d-432c-95db-52f98acd4355",
+      "DataSourceSetting": {
+        "TableName": "Orders",
+        "BindingInfos": [
+          {
+            "GUID": "c7e93071-8e1f-46ff-9992-fbd63d5d9da7",
+            "BindingInfo": {
+              "TableName": "Orders",
+              "ColumnName": "ID",
+              "GUID": "f0fc7de4-2ad7-4ad3-b674-5695aa1c5bac"
+            },
+            "ColumnName": "ID"
+          },
+          {
+            "GUID": "5ec0c472-22f2-42e4-bf56-679085afdfbc",
+            "BindingInfo": {
+              "TableName": "Orders",
+              "ColumnName": "UserName",
+              "GUID": "8f6f84dc-4562-4417-9c03-d691d53ab1bd"
+            },
+            "ColumnName": "UserName"
+          },
+          {
+            "GUID": "2bce94b1-696a-4093-bc63-2e546ee8596b",
+            "BindingInfo": {
+              "TableName": "Orders",
+              "ColumnName": "total_amount",
+              "GUID": "ddd4c5ab-5d21-4f6d-ba10-2550cfdae730"
+            },
+            "ColumnName": "total_amount"
+          },
+          {
+            "GUID": "0a1b65e8-eb5d-49bb-bf48-6217f10bf8eb",
+            "BindingInfo": {
+              "TableName": "Orders",
+              "ColumnName": "shipping_address",
+              "GUID": "42e6670e-d735-4846-a294-d0077fe66557"
+            },
+            "ColumnName": "shipping_address"
+          },
+          {
+            "GUID": "573ed9ab-92c2-4d4b-9660-c63b5614cf2a",
+            "BindingInfo": {
+              "TableName": "Orders",
+              "ColumnName": "full_name",
+              "GUID": "9dc1b8a9-b4fd-446a-869b-694719fd2926"
+            },
+            "ColumnName": "full_name"
+          },
+          {
+            "GUID": "20d7eae0-f0e0-48c2-9777-fd0f1ffece09",
+            "BindingInfo": {
+              "TableName": "Orders",
+              "ColumnName": "Date_and_Time",
+              "GUID": "d4730b2f-210e-4cc9-9a2f-62c770a0aea1"
+            },
+            "ColumnName": "Date_and_Time"
+          },
+          {
+            "GUID": "93b59491-4648-4de2-8ab3-a707efd37728",
+            "BindingInfo": {
+              "TableName": "Orders",
+              "ColumnName": "FGC_State",
+              "GUID": "a0a478ea-47e3-4344-a1b7-adf9ec43c71b"
+            },
+            "ColumnName": "State"
+          },
+          {
+            "GUID": "845a8812-5b4d-4637-82df-275d8e9ced10",
+            "BindingInfo": {
+              "TableName": "Orders",
+              "ColumnName": "Date_and_Time",
+              "GUID": "093ab114-8c9c-436f-a19d-fdfa2975a743",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                "ColumnAttachType": 4
+              }
+            },
+            "ColumnName": "Date_and_Time_Month"
+          },
+          {
+            "GUID": "f57a25c6-9b59-475e-adc2-9300d09f146c",
+            "BindingInfo": {
+              "TableName": "Orders",
+              "ColumnName": "Date_and_Time",
+              "GUID": "f8582e54-ff91-4b4b-ae4c-d1ed7050169a",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                "ColumnAttachType": 1
+              }
+            },
+            "ColumnName": "Date_and_Time_Year"
+          }
+        ]
+      },
+      "ColumnsType": [
+        "integer",
+        "string",
+        "integer",
+        "string",
+        "string",
+        "date-time",
+        "string",
+        "date-time",
+        "date-time"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}

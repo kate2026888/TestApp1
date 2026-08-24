@@ -1,0 +1,94 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "Count": 17
+  },
+  "Cols": {
+    "Count": 14
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      },
+      "TemplateCellSource": "origin"
+    },
+    "12,1": {
+      "TemplateCellSource": "name"
+    },
+    "13,1": {
+      "TemplateCellSource": "brand"
+    },
+    "15,1": {
+      "TemplateCellSource": "price"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "Foreground": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "ＭＳ Ｐゴシック",
+        "Body",
+        "Bauhaus 93",
+        "#FFFF0000"
+      ]
+    },
+    "CellStyles": {
+      "12,1": 0,
+      "12,2": 1,
+      "12,3": 1,
+      "12,4": 1,
+      "12,5": 1,
+      "12,6": 1,
+      "12,7": 1,
+      "12,8": 1,
+      "12,9": 1,
+      "12,10": 1,
+      "12,11": 1,
+      "12,12": 1,
+      "13,1": 1,
+      "15,1": 2,
+      "15,2": 1,
+      "15,3": 1,
+      "15,4": 1,
+      "15,5": 1,
+      "15,6": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "15,1,1,6",
+    "1,2,10,10",
+    "12,1,1,12",
+    "13,1,2,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "Product List"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//eAuIr6ClRO3tocYOQECkUurYETWGq/1+8sTc/tILeVY6qYIleIgkF1B/vHyVp6EU/KOlZPhvChFYBTBOuTO/qzyuL0sTcaNbny7y0CHQRb3D/UHRvzdb7HWq/UGXG98OORIGVh7QAdI1oaYICuoksq/e7aUNjl22EB0Kw6FrV0YjfxMMxuMW9FQUoLFX5Z+0FIz/iY1P80XAWkijrDwHZrHrqRuW5n+IPLm7N1ztWU2H9xsCi47p0LNLxPL+X9qJ8Ztjnk9Ir8KxrzLCGd5n553pf5AEdsGPBfKGsKHTnmQNVYoYN7D5bmrGhX2bPpz2i4M6ZrecIv4Pe57AXrl9ZK4it45BW99RXn7BAYvkeX8wHafkS+nAMvi6ZpzwyHcWP1gr11C/jaUuX4x9/ypkpnM3G1XQ043zi6Zy2aGPtjFOchvZE3C5MfWlCgR47nEwyCh1conFg1w7NcJFfRfUpe64d6BQ0iawjqLegyCgOEQd7TcEHvNEBC57K13hHkfLX01OXZnHHN3rahTfgsjFurtn2XpWbh5ZzkaqTkgnDh92NpkVMp134fWNAr+uER8gBOMlirA+0cxt6xTmyWoHD+3IDjplMY88Efn3vEMAZVz8k5tXahGKBiYB4EGI9QVPJ/DhBeVeeyLEcDLbXsC54mdDEmDK2TP8fhYKVEUKUQM/wkj/8cEJkf1Bv1LSa1qGTA3dEpJ7/sSbKJ58r9w7vVz/O8vu469+bPoT+Mj5NuC8NF8I2JYH4FuN4DAPdDXdNsTgWe0cDqzz97ync5rhX2KUjqpRD0fBGREHSGHYOs8yZWkQyEqIcpQNRCuSkaLaA5sGYijF6XUNoa69m+HhUgTGicBEeHbyC5iL347s0AU6i0vdTelQcqPybHWCNZgqvYPr6z+08hFH04OLN494vQ==|920

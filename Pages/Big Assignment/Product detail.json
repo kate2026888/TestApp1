@@ -1,0 +1,818 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 11.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 11.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "Count": 65
+  },
+  "Values": {
+    "4,48": "stock",
+    "5,48": "prodID",
+    "6,48": "userName",
+    "8,31": "Brand:",
+    "9,31": "Origin:",
+    "11,34": "$",
+    "26,31": "Stock:",
+    "28,31": 1,
+    "28,36": "Add to cart",
+    "31,31": "BUY NOW",
+    "31,48": "Quantity",
+    "33,48": "SumQuantity",
+    "43,48": "cartItem.productID",
+    "44,48": "cartItem.quantity"
+  },
+  "Formulas": {
+    "4,51": "ODATA(\"Products?$select=stock&$filter=ID eq \"&IF(ISBLANK(AZ6),\"null\",AZ6))",
+    "5,51": "ODATA(\"Products?$select=ID&$filter=name eq \"&IF(ISBLANK(AF6),\"null\",\"'\"&AF6&\"'\"))",
+    "31,53": "ODATA(\"CartItems?$select=quantity&$filter=product_id eq \"&IF(ISBLANK(AZ6),\"null\",AZ6)&\" and UserName eq \"&IF(ISBLANK(AZ7),\"null\",\"'\"&AZ7&\"'\"))",
+    "33,53": "BB32+AF29",
+    "44,55": "AF29",
+    "26,34": "AZ5"
+  },
+  "AttachInfos": {
+    "5,3": {
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "images",
+        "GUID": "a5fee5e1-8a56-4093-b626-9f440f70dc06",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      }
+    },
+    "5,31": {
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "name",
+        "GUID": "94f81972-12a3-4709-b0fd-410ec44a120d"
+      }
+    },
+    "5,51": {
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "ID",
+        "GUID": "0ab45db7-09bf-48ed-87f9-d544f607e0a7"
+      }
+    },
+    "6,51": {
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "UserName",
+        "GUID": "5d712493-90cf-4fd2-aaa6-75b1a6d1a732"
+      },
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowUserPicture": false,
+        "ShowCircleUserPicture": true,
+        "ShowDropDown": false,
+        "ShowNotification": false,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "8,34": {
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "brand",
+        "GUID": "953819a6-54a3-4326-b166-e6e0bf2847dd"
+      }
+    },
+    "9,34": {
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "region",
+        "GUID": "25dafbd9-1caf-4e50-a406-aed00236713b"
+      }
+    },
+    "11,31": {
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "price",
+        "GUID": "e4d582a1-a470-4952-9b2e-37adc337af93"
+      }
+    },
+    "14,31": {
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "description",
+        "GUID": "582768d3-fecd-4092-97a4-91482f5b0085"
+      }
+    },
+    "19,48": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "Products",
+        "RowIndex": 19,
+        "ColumnIndex": 48,
+        "RowCount": 7,
+        "ColumnCount": 17,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "Products",
+            "ColumnName": "is_active",
+            "GUID": "eaaba782-2e8d-490c-9315-49ffa6ef1ea0"
+          },
+          "Value": "TRUE"
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "20,48": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "ID",
+        "GUID": "5b14544d-f070-4990-a807-ce0ddc658d87"
+      }
+    },
+    "20,51": {
+      "NameUsedInJavaScript": "name",
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "name",
+        "GUID": "14cb8948-ca12-4ea4-b45c-a29fc15a390d"
+      }
+    },
+    "20,54": {
+      "NameUsedInJavaScript": "description",
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "description",
+        "GUID": "0f43f8fa-1df6-468d-961b-56bb3a37c0da"
+      }
+    },
+    "28,31": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "SpinButtonvisibility": 0,
+        "TemplateKey": "_RS_DarkLine_LargeRoundCorner_Normal6",
+        "CellDefaultValue": 1.0
+      },
+      "DataValidationInfo": {
+        "NumberType": 1,
+        "FirstParamValue": "1",
+        "SecondParamValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "='Product detail'!AZ5"
+        },
+        "ErrorMessage": "Invalid input!"
+      }
+    },
+    "28,36": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                        "tableData": {
+                          "TableName": "CartItems",
+                          "ColumnName": "product_id",
+                          "GUID": "960e468d-5fe4-4553-9cb1-59591f2771e9"
+                        }
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "='Product detail'!AZ6"
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                        "tableData": {
+                          "TableName": "CartItems",
+                          "ColumnName": "IsQuickOrder",
+                          "GUID": "4b5ba065-993e-4da2-a3b0-344780d6f3ae"
+                        }
+                      },
+                      "value": "1",
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "CartItems",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "CartItems",
+                        "ColumnName": "product_id",
+                        "GUID": "8a385e5a-582a-4577-9ddb-9b159b1f5d08"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "='Product detail'!AZ6"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "CartItems",
+                          "ColumnName": "quantity",
+                          "GUID": "6a784253-e1f3-4fab-97a1-8527bfcdf9c9"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='Product detail'!BB32+'Product detail'!AF29"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "934de7a5-5fde-4bda-b2bf-5482c9571a11"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "CartItems",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "CartItems",
+                          "ColumnName": "UserName",
+                          "GUID": "7b3f5dc1-8e3b-48a4-995f-71deed8decf9"
+                        },
+                        "Value": "%CurrentUser%"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "CartItems",
+                          "ColumnName": "product_id",
+                          "GUID": "022389a6-6727-4632-9bb0-c4bea495e41f"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='Product detail'!AW21"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "CartItems",
+                          "ColumnName": "quantity",
+                          "GUID": "36657cef-e50e-4c4d-a113-9c454e484e6b"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='Product detail'!AF29"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "CartItems",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "Disabled": true
+                  }
+                ],
+                "ID": "60aeece4-06d4-488e-95dc-1fa977b3ef54"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "CartItems",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "DrawerDirection": 3,
+            "DialogLocation": "25%",
+            "PageName": "Shopping Cart"
+          }
+        ],
+        "Text": "Add to cart",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    },
+    "31,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "CartItems",
+            "UpdateType": "delete",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "CartItems",
+                    "ColumnName": "IsQuickOrder",
+                    "GUID": "ce1d7219-e7a2-4e84-964a-0595ebe7cf4c"
+                  },
+                  "Value": "1"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "CartItems",
+                    "ColumnName": "UserName",
+                    "GUID": "c1b9b2c4-5e3f-4507-8153-3407400a2963"
+                  },
+                  "Value": "%CurrentUser%"
+                }
+              ]
+            }
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "CartItems",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "CartItems",
+                  "ColumnName": "UserName",
+                  "GUID": "43cb2820-b99b-4ed4-afb0-309b762de39c"
+                },
+                "Value": "%CurrentUser%"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "CartItems",
+                  "ColumnName": "product_id",
+                  "GUID": "7043041a-f89d-4352-b0cc-41dcd73fccb4"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='Product detail'!AZ6"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "CartItems",
+                  "ColumnName": "quantity",
+                  "GUID": "f7ba61bb-a61d-4879-bccf-c7b938dd8d0a"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='Product detail'!AF29"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "CartItems",
+                  "ColumnName": "IsQuickOrder",
+                  "GUID": "e3124a56-aaf6-4ab2-87df-08d1474554d9"
+                },
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "Check out BuyNow"
+          }
+        ],
+        "Text": "BUY NOW",
+        "TemplateKey": "_RS_Normal_Style3"
+      }
+    },
+    "35,48": {
+      "ListViewInfo": {
+        "Name": "Listview2",
+        "TableName": "CartItems",
+        "RowIndex": 35,
+        "ColumnIndex": 48,
+        "RowCount": 7,
+        "ColumnCount": 17,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "CartItems",
+                "ColumnName": "UserName",
+                "GUID": "686d1d2a-6774-4dde-8f09-394c7c212045"
+              },
+              "Value": "%CurrentUser%"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "CartItems",
+                "ColumnName": "product_id",
+                "GUID": "756cbbbc-bbe0-4f7d-bdce-21ae4c142c71"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='Product detail'!AZ6"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "36,48": {
+      "NameUsedInJavaScript": "UserName",
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "UserName",
+        "GUID": "7f1fff3b-1b19-4ee7-a485-ac10a5aa6671"
+      }
+    },
+    "36,52": {
+      "NameUsedInJavaScript": "product_id",
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "product_id",
+        "GUID": "a869d566-b004-4d46-ba95-6c9e4576891c"
+      }
+    },
+    "36,56": {
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "quantity",
+        "GUID": "35917caa-e5b1-4531-8a46-91340ee6d34a"
+      }
+    },
+    "43,55": {
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "product_id",
+        "GUID": "78e26e27-f85f-426f-bdb7-95a1c08bc332"
+      }
+    },
+    "44,55": {
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "quantity",
+        "GUID": "75fe73c0-c7bb-45fd-8fba-ee935487037e"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 37.33333333333333,
+        "FontWeight": 2,
+        "Foreground": 3
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 24.0,
+        "Foreground": 6
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "WordWrap": true
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontStyle": 7,
+        "FontWeight": 2,
+        "Formatter": 4,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 24.0,
+        "FontWeight": 2,
+        "Foreground": 8
+      },
+      {
+        "FontFamily": 9,
+        "FontSize": 16.0,
+        "HorizontalAlignment": 10
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "ＭＳ Ｐゴシック",
+        "Bold",
+        "Accent 2 -50",
+        "[AUTO]General",
+        "Britannic",
+        "#FFFF0000",
+        "Italic",
+        "Accent 1 -25",
+        "Arial Rounded MT",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "4,7": 0,
+      "4,8": 0,
+      "4,9": 0,
+      "4,51": 0,
+      "5,31": 1,
+      "6,51": 0,
+      "8,31": 2,
+      "8,32": 0,
+      "8,33": 0,
+      "8,34": 0,
+      "8,39": 0,
+      "8,40": 0,
+      "9,31": 2,
+      "9,32": 0,
+      "9,33": 0,
+      "9,34": 0,
+      "10,42": 0,
+      "10,43": 0,
+      "10,44": 0,
+      "10,45": 0,
+      "10,46": 0,
+      "10,47": 0,
+      "11,31": 3,
+      "11,32": 0,
+      "11,33": 0,
+      "11,34": 3,
+      "11,40": 0,
+      "11,41": 0,
+      "11,42": 0,
+      "11,43": 0,
+      "11,44": 0,
+      "11,45": 0,
+      "11,46": 0,
+      "11,47": 0,
+      "12,31": 0,
+      "12,32": 0,
+      "12,33": 0,
+      "12,34": 0,
+      "12,40": 0,
+      "12,41": 0,
+      "14,31": 4,
+      "19,48": 5,
+      "19,49": 5,
+      "19,50": 5,
+      "19,51": 0,
+      "19,54": 6,
+      "19,55": 5,
+      "19,56": 5,
+      "19,57": 5,
+      "19,58": 5,
+      "19,59": 5,
+      "19,60": 5,
+      "20,48": 0,
+      "20,49": 0,
+      "20,50": 0,
+      "20,51": 0,
+      "20,52": 0,
+      "20,53": 0,
+      "20,54": 0,
+      "20,55": 0,
+      "20,56": 0,
+      "26,31": 7,
+      "26,32": 0,
+      "26,33": 0,
+      "26,34": 8,
+      "26,35": 0,
+      "26,36": 0,
+      "26,37": 0,
+      "26,38": 0,
+      "26,39": 0,
+      "26,40": 0,
+      "26,41": 0,
+      "26,42": 0,
+      "26,43": 0,
+      "26,44": 0,
+      "26,45": 0,
+      "27,31": 0,
+      "27,32": 0,
+      "27,33": 0,
+      "27,34": 0,
+      "27,35": 0,
+      "27,36": 0,
+      "27,37": 0,
+      "27,38": 0,
+      "27,39": 0,
+      "27,40": 0,
+      "27,41": 0,
+      "27,42": 0,
+      "27,43": 0,
+      "27,44": 0,
+      "27,45": 0,
+      "28,31": 9,
+      "28,32": 0,
+      "28,33": 0,
+      "28,34": 0,
+      "28,35": 0,
+      "28,36": 10,
+      "28,37": 0,
+      "28,38": 0,
+      "28,39": 0,
+      "28,40": 0,
+      "28,41": 0,
+      "28,42": 0,
+      "28,43": 0,
+      "28,44": 0,
+      "28,45": 0,
+      "29,31": 0,
+      "29,32": 0,
+      "29,33": 0,
+      "29,34": 0,
+      "29,35": 0,
+      "29,36": 0,
+      "29,37": 0,
+      "29,38": 0,
+      "29,39": 0,
+      "29,40": 0,
+      "29,41": 0,
+      "29,42": 0,
+      "29,43": 0,
+      "29,44": 0,
+      "29,45": 0,
+      "31,31": 11,
+      "32,38": 0,
+      "32,39": 0,
+      "32,40": 0,
+      "32,41": 0,
+      "32,42": 0,
+      "32,43": 0,
+      "32,44": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "5,3,28,25",
+    "7,31,1,6",
+    "21,48,5,17",
+    "20,48,1,3",
+    "19,48,1,3",
+    "20,51,1,3",
+    "20,54,1,3",
+    "19,54,1,3",
+    "19,51,1,3",
+    "33,53,1,3",
+    "31,48,1,5",
+    "37,48,5,17",
+    "35,48,1,4",
+    "36,48,1,4",
+    "35,52,1,4",
+    "36,52,1,4",
+    "8,34,1,5",
+    "9,34,1,5",
+    "36,56,1,4",
+    "35,56,1,4",
+    "5,31,2,17",
+    "5,51,1,2",
+    "4,51,1,2",
+    "31,53,1,3",
+    "11,31,2,3",
+    "11,34,2,1",
+    "28,36,2,10",
+    "28,31,2,4",
+    "26,31,2,3",
+    "26,34,2,2",
+    "31,31,2,7",
+    "14,31,10,17"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "MasterPage1",
+    "PageOverflowMode": 1,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "CartItems"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//KnFZSLYJh/YnGX/ggBhljO4bpJoxisI1w9Nbj+BAqOaw/siJhcviK5Rr2ycIFkl3twGNlmfU8zAu4i2xpVOZdLEmATqvpspKcue2uEHQn0uV0x03hnpFMAXtmr08T8w1jfDWx/Fdku+8J3nwHO4IUfLrB1iC4J5qjgCUq0uun0grkdW2pzygwm9rXjiTr7GlsF9j78m2VNDf2mC7WfQreeWtWPC5pFFCyiMRVihfxjnRfCNbD7d2WPFyAZD1G870CiIIin249GUEzjxLlNVCNRIPp5/w0ZJpwQsTuhBShqm8I5Bd1WJVC+wuYnBGKReRyREO9A0NInNmWb9fI3wl+Q6azNqSvT+cadziPg/xI8OkCOHa7YYb6rf4XNozAaJAe4OuGIrit49pvVJISQKETliIxHvRBJDZS2vZxN+IEZPMYLFD9T3wciWlS18kcgUjdEpBAfshApbciID/4G4njA/W+hVAivQp/UGkGmyIqUAp+2QovkY6VoGEFYbdP0/tuQd65XqF4Krj2tV6dNXwfMceI6nlvj8U93NZwVyZ+eKaBGW6tDktElkXYoRJQNzboCuK2C/L/jD99TN0avwR88DcSaXuNAVZqdT9I9ygctewUKvsCUycUPNHO3Yxdzso5rzfc9gMobIYy6RGZIpxypq09n/jXyfkhP8Zdtxrt8/8ZWKZg+Tis+8wTMBouOSnyE9abh4XBanpERZAcF9KLL71FZgNGLTWjIBeFBUxM2ujYw7I+dCSXW23y5a99cXa/4MPH38VnrkDAAmYKFfPIfwxY62S7P44DhZPPUXUQAkMMn8lub/Tw0Vm+0sjS3ZjOglAFol0Of7wxz02A4KCUzM2WRjWV8GpTyvj8n14QkEGvsjWgUrO9xgC8vSaBiPNCoBBUKG5sqSQcAcvkti7IQ==|920

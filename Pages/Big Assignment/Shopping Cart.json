@@ -1,0 +1,823 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 13.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 13.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 13.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "8,3": "PRODUCT",
+    "8,23": "PRICE",
+    "8,29": "QUANTITY",
+    "8,35": "TOTAL",
+    "8,40": "CART TOTAL",
+    "10,3": "   ",
+    "12,39": "Shipping",
+    "12,52": "Shipping fee",
+    "13,42": "Shipping options will be updated during checkout",
+    "16,39": "Total",
+    "20,39": "CHECK OUT",
+    "31,5": "CONTINUE SHOPPING",
+    "31,17": "DELETE ITEM",
+    "40,23": "Total",
+    "40,52": "productID"
+  },
+  "Formulas": {
+    "41,23": "S42*O42",
+    "16,53": "SUM(X42)&\"$\""
+  },
+  "AttachInfos": {
+    "10,3": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "TemplatePageName": "9ffed3b70e214e52b4332a92d6bd0d6",
+        "ListviewName": "Listview1",
+        "NoItemSetting": {
+          "ImageForNoItem": {
+            "Name": "Application/145_check_2.svg",
+            "BuiltIn": true,
+            "Color": "Accent 1"
+          },
+          "NoItemImageSize": 25.0,
+          "TextForNoItem": "No item!"
+        },
+        "TemplateKey": "_RS_Selectable"
+      }
+    },
+    "20,39": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='Shopping Cart'!O42"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "='Shopping Cart'!AC42"
+                  },
+                  "compareType": 2
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "Exceeds stock!"
+                  }
+                ],
+                "ID": "d9365e00-7961-4a07-bceb-2e7e960bcdf2"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='Shopping Cart'!O42"
+                      }
+                    ]
+                  },
+                  "value": "1",
+                  "compareType": 4
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "Invalid value!"
+                  }
+                ],
+                "ID": "f61ddb11-2b25-449b-b39d-d857adac6343"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                            "tableData": {
+                              "TableName": "CartItems",
+                              "ColumnName": "UserName",
+                              "GUID": "9239dcdb-bdef-4f07-8ffd-631c45dbe900"
+                            }
+                          },
+                          "value": "%CurrentUser%"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "Check out"
+                          }
+                        ],
+                        "ID": "e4a3c3cd-631a-49a0-ade4-56e970877fc4"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "Your shopping cart is empty!"
+                          }
+                        ],
+                        "ID": "adefb472-1c3a-416f-87f0-9ed7f14e93fa"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9dcf75e7-8801-404d-a0bc-e6863da34b45"
+              }
+            ]
+          }
+        ],
+        "Text": "CHECK OUT",
+        "TemplateKey": "_RS_Shadow_Style1"
+      }
+    },
+    "31,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "Product List"
+          }
+        ],
+        "Text": "CONTINUE SHOPPING",
+        "TemplateKey": "_RS_Outline_Style2",
+        "Icon": {
+          "Name": "Arrow/291_left_arrow_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "31,17": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "CartItems",
+            "UpdateType": "delete",
+            "ShowConfirm": false
+          }
+        ],
+        "Text": "DELETE ITEM",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/043_brush_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "40,0": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "CartItems",
+        "RowIndex": 40,
+        "RowCount": 5,
+        "ColumnCount": 35,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "CartItems",
+                "ColumnName": "UserName",
+                "GUID": "95a0da8c-5fcd-4b12-a405-7ac8576e8498"
+              },
+              "Value": "%CurrentUser%"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "CartItems",
+                "ColumnName": "IsQuickOrder",
+                "GUID": "b36e664d-4c4e-4428-90de-69f134a0c20c"
+              },
+              "Value": "1"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "CartItems",
+                "ColumnName": "quantity",
+                "GUID": "a5f194e5-5c4e-436a-8f39-33d6664d47fb"
+              },
+              "Value": "0"
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2,
+        "CacheSetting": {},
+        "OddRowBackcolor": "transparent",
+        "EvenRowBackcolor": "transparent",
+        "SelectionBackColor": "#33141414",
+        "SelectionBorderColor": "#217346"
+      }
+    },
+    "40,37": {
+      "ListViewInfo": {
+        "Name": "Listview2",
+        "TableName": "Products",
+        "RowIndex": 40,
+        "ColumnIndex": 37,
+        "RowCount": 5,
+        "ColumnCount": 13,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "Products",
+            "ColumnName": "ID",
+            "GUID": "528f4c34-68f1-40c1-bfba-4dc650d05bdd"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "='Shopping Cart'!BE41"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "40,56": {
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "product_id",
+        "GUID": "7a14d713-a231-4e1e-854c-b192f26ff484"
+      }
+    },
+    "41,0": {
+      "NameUsedInJavaScript": "user_NAME",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "UserName",
+        "GUID": "2683f4a4-a578-4ec0-a985-39b2eb228ec7"
+      }
+    },
+    "41,4": {
+      "NameUsedInJavaScript": "product_id",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "product_id",
+        "GUID": "6ae4e899-59e8-489b-9b5f-3fe295b8b385",
+        "RelationBinding": {
+          "RelatedTable": "Products",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "images"
+        }
+      }
+    },
+    "41,8": {
+      "NameUsedInJavaScript": "name",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "product_id",
+        "GUID": "f9834b84-ddda-483e-9304-c853df05f17a",
+        "RelationBinding": {
+          "RelatedTable": "Products",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "name"
+        }
+      }
+    },
+    "41,14": {
+      "NameUsedInJavaScript": "quantity",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "quantity",
+        "GUID": "d7cffea0-9693-4e66-bb0c-9cde2b15f28e"
+      }
+    },
+    "41,18": {
+      "NameUsedInJavaScript": "price",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "product_id",
+        "GUID": "88e3abf4-1ea4-47a9-86e0-daa29e6dfc78",
+        "RelationBinding": {
+          "RelatedTable": "Products",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "price"
+        }
+      }
+    },
+    "41,23": {
+      "NameUsedInJavaScript": "Total",
+      "TotalRowSetting": {}
+    },
+    "41,28": {
+      "NameUsedInJavaScript": "stock",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "product_id",
+        "GUID": "4649f43a-0f84-4c30-a2a0-12656553ca0e",
+        "RelationBinding": {
+          "RelatedTable": "Products",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "stock"
+        }
+      }
+    },
+    "41,31": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "CartItems",
+        "ColumnName": "product_id",
+        "GUID": "e960f993-acb4-4e21-9450-5b7e52ef4bfe"
+      }
+    },
+    "41,32": {
+      "TotalRowSetting": {}
+    },
+    "41,37": {
+      "NameUsedInJavaScript": "name",
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "name",
+        "GUID": "d1b40c00-1d55-42fe-8f3b-4482b657b642"
+      }
+    },
+    "41,41": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "Products",
+        "ColumnName": "ID",
+        "GUID": "72c33829-7f8c-46ca-af06-9834b2aec1db"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontStyle": 1,
+        "FontWeight": 2,
+        "Strikethrough": false
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontWeight": 2,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 3,
+        "FontWeight": 2
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 5,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontSize": 16.0,
+        "Formatter": 5
+      },
+      {
+        "FontSize": 21.333333333333332,
+        "FontWeight": 2,
+        "Foreground": 7,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 3,
+        "FontWeight": 2,
+        "Formatter": 5
+      },
+      {
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "Normal",
+        "Bold",
+        "Body",
+        "Center",
+        "[AUTO]General",
+        "Right",
+        "#FFFF0000"
+      ],
+      "Borders": [
+        {
+          "Style": 2,
+          "Color": 0
+        },
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "7,38": 0,
+      "8,3": 1,
+      "8,4": 2,
+      "8,5": 2,
+      "8,6": 2,
+      "8,7": 2,
+      "8,8": 2,
+      "8,9": 2,
+      "8,10": 2,
+      "8,11": 2,
+      "8,12": 2,
+      "8,13": 2,
+      "8,14": 2,
+      "8,15": 2,
+      "8,16": 2,
+      "8,17": 2,
+      "8,18": 2,
+      "8,19": 2,
+      "8,20": 2,
+      "8,21": 2,
+      "8,22": 2,
+      "8,23": 3,
+      "8,24": 2,
+      "8,25": 2,
+      "8,26": 2,
+      "8,27": 2,
+      "8,28": 2,
+      "8,29": 3,
+      "8,30": 2,
+      "8,31": 2,
+      "8,32": 2,
+      "8,33": 2,
+      "8,34": 2,
+      "8,35": 3,
+      "8,38": 0,
+      "8,40": 4,
+      "8,41": 2,
+      "8,42": 2,
+      "8,43": 2,
+      "8,44": 2,
+      "8,45": 2,
+      "8,46": 2,
+      "8,47": 2,
+      "8,48": 2,
+      "8,49": 2,
+      "8,50": 2,
+      "8,51": 2,
+      "8,52": 2,
+      "8,53": 2,
+      "8,54": 2,
+      "8,55": 2,
+      "8,56": 5,
+      "8,57": 6,
+      "9,38": 0,
+      "10,3": 7,
+      "10,38": 0,
+      "11,38": 0,
+      "12,38": 0,
+      "12,39": 8,
+      "12,52": 9,
+      "12,53": 6,
+      "12,54": 6,
+      "12,55": 6,
+      "12,56": 6,
+      "12,57": 6,
+      "13,38": 0,
+      "13,42": 10,
+      "13,43": 6,
+      "13,44": 6,
+      "13,45": 6,
+      "13,46": 6,
+      "13,47": 6,
+      "13,48": 6,
+      "13,49": 6,
+      "13,50": 6,
+      "13,51": 6,
+      "13,52": 6,
+      "13,53": 6,
+      "13,54": 6,
+      "13,55": 6,
+      "13,56": 6,
+      "13,57": 6,
+      "14,38": 0,
+      "15,38": 0,
+      "16,38": 0,
+      "16,39": 11,
+      "16,53": 12,
+      "17,38": 0,
+      "18,38": 0,
+      "19,38": 0,
+      "20,38": 0,
+      "21,38": 0,
+      "22,38": 0,
+      "23,38": 0,
+      "24,38": 0,
+      "25,38": 0,
+      "26,38": 0,
+      "27,38": 0,
+      "28,4": 6,
+      "28,5": 6,
+      "28,6": 6,
+      "28,7": 6,
+      "28,8": 6,
+      "28,9": 6,
+      "28,10": 6,
+      "28,11": 6,
+      "28,12": 6,
+      "28,13": 6,
+      "28,14": 6,
+      "28,15": 6,
+      "28,16": 6,
+      "28,17": 6,
+      "28,18": 6,
+      "28,19": 6,
+      "28,20": 6,
+      "28,21": 6,
+      "28,22": 6,
+      "28,23": 6,
+      "28,24": 6,
+      "28,25": 6,
+      "28,26": 6,
+      "28,27": 6,
+      "28,28": 6,
+      "28,29": 6,
+      "28,30": 6,
+      "28,38": 0,
+      "29,29": 6,
+      "29,30": 6,
+      "29,38": 0,
+      "30,4": 6,
+      "30,5": 6,
+      "30,6": 6,
+      "30,7": 6,
+      "30,8": 6,
+      "30,9": 6,
+      "30,10": 6,
+      "30,11": 6,
+      "30,12": 6,
+      "30,13": 6,
+      "30,14": 6,
+      "30,15": 6,
+      "30,16": 6,
+      "30,17": 6,
+      "30,18": 6,
+      "30,19": 6,
+      "30,20": 6,
+      "30,21": 6,
+      "30,22": 6,
+      "30,23": 6,
+      "30,24": 6,
+      "30,25": 6,
+      "30,26": 6,
+      "30,27": 6,
+      "30,28": 6,
+      "30,29": 6,
+      "30,30": 6,
+      "30,38": 0,
+      "31,4": 6,
+      "31,5": 4,
+      "31,6": 6,
+      "31,7": 6,
+      "31,8": 6,
+      "31,9": 6,
+      "31,10": 6,
+      "31,11": 6,
+      "31,12": 6,
+      "31,13": 6,
+      "31,14": 6,
+      "31,15": 6,
+      "31,16": 6,
+      "31,17": 13,
+      "31,18": 6,
+      "31,19": 6,
+      "31,20": 6,
+      "31,21": 6,
+      "31,22": 6,
+      "31,23": 6,
+      "31,24": 6,
+      "31,25": 6,
+      "31,26": 6,
+      "31,27": 6,
+      "31,28": 6,
+      "31,38": 0,
+      "32,4": 6,
+      "32,5": 6,
+      "32,6": 6,
+      "32,7": 6,
+      "32,8": 6,
+      "32,9": 6,
+      "32,10": 6,
+      "32,11": 6,
+      "32,12": 6,
+      "32,13": 6,
+      "32,14": 6,
+      "32,15": 6,
+      "32,16": 6,
+      "32,17": 6,
+      "32,18": 6,
+      "32,19": 6,
+      "32,20": 6,
+      "32,21": 6,
+      "32,22": 6,
+      "32,23": 6,
+      "32,24": 6,
+      "32,25": 6,
+      "32,26": 6,
+      "32,27": 6,
+      "32,28": 6,
+      "32,38": 14,
+      "33,4": 6,
+      "33,5": 6,
+      "33,6": 6,
+      "33,7": 6,
+      "33,8": 6,
+      "33,9": 6,
+      "33,10": 6,
+      "33,11": 6,
+      "33,12": 6,
+      "33,13": 6,
+      "33,14": 6,
+      "33,15": 6,
+      "33,16": 6,
+      "33,17": 6,
+      "33,18": 6,
+      "33,19": 6,
+      "33,20": 6,
+      "33,21": 6,
+      "33,22": 6,
+      "33,23": 6,
+      "33,24": 6,
+      "33,25": 6,
+      "33,26": 6,
+      "33,27": 6,
+      "33,28": 6,
+      "40,8": 15,
+      "40,9": 15,
+      "40,10": 15,
+      "40,11": 15,
+      "40,12": 15,
+      "40,13": 15,
+      "40,14": 6,
+      "40,18": 16,
+      "40,19": 15,
+      "40,20": 15,
+      "40,21": 15,
+      "40,22": 15,
+      "40,23": 6,
+      "40,28": 6,
+      "41,8": 6,
+      "41,14": 6,
+      "41,18": 6,
+      "41,23": 6,
+      "41,28": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "12,52,1,6",
+    "20,39,2,19",
+    "16,53,1,5",
+    "13,42,1,16",
+    "10,3,18,35",
+    "41,4,1,4",
+    "40,4,1,4",
+    "31,5,2,10",
+    "31,17,2,10",
+    "41,0,1,4",
+    "40,0,1,4",
+    "40,8,1,6",
+    "41,8,1,6",
+    "42,0,3,35",
+    "40,18,1,5",
+    "41,18,1,5",
+    "40,23,1,5",
+    "41,23,1,5",
+    "40,28,1,3",
+    "41,28,1,3",
+    "41,31,1,4",
+    "40,31,1,4",
+    "41,14,1,4",
+    "40,14,1,4",
+    "42,37,3,13",
+    "40,37,1,4",
+    "41,37,1,4",
+    "40,41,1,4",
+    "41,41,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "MasterPage1",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "CartItems"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//F1nAhh8oTb6xo9agyyq+YiX0jt+BGeriTtv+2w6w5219VeoEDNhCgluDePu99x3sGTlbqVJoAdw26AtH2r5uxw//J693rdMxYdBcWm40ZjNALFJSOagy7Yi7uPp3L+OPyTgCikxawCOjKhwwMXQV6eicS3eCAzI9EHxdkSRXbXIE3EKTXPWLLptV+WXeshDeHNx8HQZNSdZ+gu7HqA9uQQ9mEPq9tq5tFU2pAkmpjt+Sz7MmaNlnIRHyszuApuBeiPHFjeAFpZIGgJIcczztbt+9YIdROS8a/gcKNddyLDVKC7O+nTQh/C6GyxVkNj/nASNq9jLWaYbTx7l6fH0JwIX/zkLic7CTsMxrfS34NS8/kbBgh4zTTIC0idmYWz2Vct14Y7vwH7azfGnelZ4AxeWpWxaAdqg17OWihJsUK461TmM+wuZAZr/hBXublfNQ4fAQ0Cp7c3np/JPRJ+DB4bwiMwQfSKt8qWvRYXgXqyae+gE6xKa3+2YOfgKlakIHY1craIAD89GXgbGA0/Z2OLCgMlEpol0+tkQ6hS8XgEgIoI/a9LmdVs7e2MiyEmoCvHPXZwaym9YsHNJxAypNCtF/XJO6vUqBP7t0vrSFKRzYG+hWt6rWzlOqynSFm7lu+rv6jShoDSD4ENZJn23laji8xeQR2QRns6aOVi5j6MReDuc1kXpuOoQv8ToFadEDZKdQEMLnwCcDewbKaqcuSMoG22BIEqBGA+mq01exEMZtQf/jL5DiGStDDfuuYVmsw4/Pf+NJPNLM2RtuAIlK149zsNAqlFVSHKdvOj9V7iQa56geq6Qw2duJQP6yyI44IZUz+dr5XIu93cReMKbx9HLQJ5QOK7T3cbqA1OtA5nSD/KSEX1X7SOVqhEHeQI4YS7Wl3dIIr0Sh5Gv1Hw3Z/A==|920

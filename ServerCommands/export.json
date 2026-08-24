@@ -1,0 +1,116 @@
+{
+  "Name": "export",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportExcelCommand, ServerDesignerCommon",
+      "ExcelOperation": 1,
+      "FilePath": "C:\\productList",
+      "TableName": "Products",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "Products",
+            "ColumnName": "ID",
+            "GUID": "92494df6-0132-4e1e-bc53-81d136be0a17"
+          },
+          "ExcelColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Products",
+            "ColumnName": "name",
+            "GUID": "4eff9190-9af1-4cdc-8672-6e58f9305c9f"
+          },
+          "ExcelColumnNameOrIndex": "name"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Products",
+            "ColumnName": "description",
+            "GUID": "0e499976-614e-4c2c-acd5-84b512d3e4eb"
+          },
+          "ExcelColumnNameOrIndex": "description"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Products",
+            "ColumnName": "price",
+            "GUID": "0a614216-6bfd-430f-a0cf-2ebfc27a841e"
+          },
+          "ExcelColumnNameOrIndex": "price"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Products",
+            "ColumnName": "brand",
+            "GUID": "62980510-707e-4e70-84c7-048d451388a7"
+          },
+          "ExcelColumnNameOrIndex": "brand"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Products",
+            "ColumnName": "region",
+            "GUID": "6aa5afc7-fa79-4174-9cb3-15704564b907"
+          },
+          "ExcelColumnNameOrIndex": "region"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Products",
+            "ColumnName": "images",
+            "GUID": "d737628c-cf95-4b90-bf19-b9b1498b5673"
+          },
+          "ExcelColumnNameOrIndex": "images"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Products",
+            "ColumnName": "stock",
+            "GUID": "55728dc3-c295-4541-8691-e7fd3efc7bed"
+          },
+          "ExcelColumnNameOrIndex": "stock"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Products",
+            "ColumnName": "category_id",
+            "GUID": "d59b11e9-c746-45fb-8c09-415890ffc665"
+          },
+          "ExcelColumnNameOrIndex": "category_id"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Products",
+            "ColumnName": "is_active",
+            "GUID": "8530861b-fdb2-4b43-80cb-2684e335fbf5"
+          },
+          "ExcelColumnNameOrIndex": "is_active"
+        }
+      ]
+    }
+  ]
+}

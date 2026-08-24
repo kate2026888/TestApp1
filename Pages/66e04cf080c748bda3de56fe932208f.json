@@ -1,0 +1,117 @@
+{
+  "Rows": {
+    "Count": 1,
+    "DefaultSize": 28.0
+  },
+  "Cols": {
+    "Count": 17
+  },
+  "Values": {
+    "0,9": "X"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "TemplateCellSource": "name"
+    },
+    "0,11": {
+      "TemplateCellSource": "quantity"
+    },
+    "0,14": {
+      "TemplateCellSource": "Total"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontSize": 16.0,
+        "Foreground": 1,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Foreground": 1,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "Foreground": 5,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": 16.0,
+        "Foreground": 6,
+        "HorizontalAlignment": 4
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 50",
+        "[AUTO]General",
+        "Center",
+        "Left",
+        "#FFFF0000",
+        "Text 1 0"
+      ]
+    },
+    "CellStyles": {
+      "0,9": 0,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 2,
+      "0,15": 2,
+      "0,16": 2
+    },
+    "ColStyles": {
+      "0": 3,
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 5,
+      "14": 6,
+      "15": 6,
+      "16": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,9,1,2",
+    "0,11,1,1",
+    "0,14,1,3",
+    "0,0,1,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "Check out BuyNow"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//zhIS+pdMmSELGMxZAppWfqRZgWKPRKxWzjjF6Hx15ra3+41eaS8GJUSCQxOhVNctqkcZdyOusaB6wvgseAEjRzepMwhyp3i+5Agoo15f9vyMVn3DJ7QZ4BVcrSIpLmAK/4pv8cd/xJ/RA4z3F/jiAdZY+3Qbo9ZI3j+1nCl7nuXguReO+AUAz3r54ifP77ueNrlKvV69+ZN3wTJG33YV1qMLAAbiq9K8fBXqi1eZzl+J2Qx3+LLdYwsLWfxVrLyflutOgZWJI2sPNrFDFDvcP8OhYysjQxrjYf1kvVz+QIsrSiOZMD4wzMC7HXYHaKqMTu0+Uxsw7Z14yNwj3Mc0Vc9aRX7wKkiKGr/s6Gu+q0nBahoYpkXo3LyzfGKqZY2SityXvghuEC5kPOAMsL02yMii7hPMaZThr7J7TrFxlzjKkG85E+m/257Meg9i+yR+KXUmyBWb6hdfjv80BqoftUBbUD8fa9oxe3U0XtuaCe/ijAjV5gvbLohDOR2Opgvef4lRWl1NDm9KsBb4BGlmGF0W5xXH8Wz4IE9HrUbKqS2/WqdM8Xt3g0DcfhTHmFxdIbzcUOkWNEQKvFoeSKRLLibHrvINldvuw9BCZm7bll06SzUaa4degmuys53uF9VVDBcv5zv+Sar5IkHXZ1yMSgDG3X6BlTSx8+3CH1bNTKmDnVos60/iDe9kKiRDRTk2lksW65tZP658D4yg6/WXPBotEkfYzy/u3rGmJf/UNB5r1iexgFTyKQf62FR0TrDdMwQ270Vo/iq+M+Bk1k+l+S83bSbVm4i31dWaUb4X07A3Ym1e00PMF3sfPqglCXgRGcKLFzwKam0jrho1cCmirRd9Rg5DdkqGvYNkCIBu7Q52L5rYWiZdH27hP4dIxbkKZZHecDLP1OkT1tXqu4RCYg==|920
