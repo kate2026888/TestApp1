@@ -69,7 +69,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "FGC_ログイン_ハイブリッド認証_モバイル"
+            "PageName": "FGC_ログイン_モバイル"
           }
         ],
         "Text": "ログイン",
@@ -124,7 +124,7 @@
     },
     "SheetStyle": {
       "FontFamily": 0,
-      "FontSize": -999.0,
+      "FontSize": 13.333333015441895,
       "Foreground": 8
     }
   },
@@ -148,6 +148,7 @@
   "BackgroundPictures": [
     {
       "Name": "cd1e2a47-c776-4505-bf77-dea6447289f9.png",
+      "DisplayName": "背景画像1",
       "StyleInfo": {
         "CornerRadius": 20.0,
         "Fill": "#FFF6F6F8",
@@ -161,4 +162,4 @@
       "Size": "340,360"
     }
   ]
-}//73gIysnU/aa2V4TPiCNthpLOHAIrgzXjAVjqiux+5+ZAdmlHNArHnLr/X52px0QVdWKB4zRi9F51pS7TXIeGKfxmT0xN9YEp/GpqUVpxZJIo6kAjBnBAPxmlzGQI+hij6cMAgpfxYzeV2HC3F5ju92yC1gSPhVa9K6fdYvrYx7ZaGPr8BlqvNnf+9D4hfLeh4Bh9kO1eQep8xBr7KbuVOMg4H8FUw5wzV7xuWQZhdlT4uHZzgxeVHPJAdpsqG6bH1EcRs6PSpOI2DEa3IA4kx8a/52NogOSKXPE+f4A8WfQ4BdIURKu1csCKmJFbMpvxDeAjwtcH/dM0N7Cpw30R8nYuR+FndXk7pvdS2a3VsbZmgADcnYKXCo0DtOhOd3ZJHnkSmqsmbtmeil6lXQtMiBiqFw9v8QW7Wcbf8PcEojlz8lUKdEPhngD0qR1cxs8icqxf5JcIF8GO4aP29QUp+ocLO1EQrW43subbgzkBNtkIAz4VICLqVkEDUs1HyD3mN+vFn0z6zzDpfObh8iNQYFdRYzVolIvQi62vLq/XJWCyVxzWIVEi3XUuaEDoEVWJMXkjICudAioGARUTh7UPK6JJSv0zhjhj318siuNILfJC8zQmj7pgRpYngahYhV+eIjMzNnzoLLhj3DIgrPXiBiadgm20Ep/+t9dpUY89Zq9sEhz5A3RJ4ZppqVonw1eSgK7HUelMkiwRVJdg8DxgVASCY0cj2wc3PlrOQzztoOg3wtprmn7nMQhSw1M+bBdWNd0uaUpkYbt4Ty9lQg7FBgRXEqD7rpPSTQVtp5kVb1nWkGJZVLJ+HjsEnpk35w8XNWC4T83xDfbN++/2AwB/jvepdRuUxjY7R0L4SIaN4uGO4HRpMZ3ACUQh0SyXn1mxfMzv18/Ng4W7trXJps3jLQ==|920
+}//t6YbmqcXz+gUjZydDVBaHZgR2zsO8EetHEhOzNC12t7Vu2iOdb00PdERmGScryup8UJcrqhxmpMHedJ3RujjRxSYOuiGUUTY3GhsSsv6Q4nIgl10CEM/xxE2VMOaAjNGkBmHRz8lse9Kwrj+1Q3wxsuAFLE8c6rWfV18rPO7a70ObPus4Qkso0UJyqLFLjdtyNba2Fa6D7CTBo6YlKWnsXLXXEqjkcJ0a59OGXpS34TEC17fyDCP7xWJTupriflu17uhVnKgRy/t1hWbgN2CTfTxLmumO6Z4hpujS03BjA+5nQ69dlRbSS9epdMDXMwTLIDkXplA0xO58GHkjcP5yJware9xxlUZl9v/H4fEEc4G1qYqZ7nigN/4lSVPLyOeqJFAaBaFVZ4+c78jt3kB0XERD5B+v1DX1yn4rsnpdP6kuhaGqz7GnPvWZZwfeaBVbVLatzwLnWQ5EnjPfEvQP6eHsAogP6tdBTiPlI5fvpuN1cc06tLLqdX25Nki5DvnS9HrZyk879IdcJP7l3qPOcY7ZlxNrRVmDNFujDj4SEPIxO0227XQyJj4espZP4fBnWfajC6blgPmQrDW7cJJtxmSLszlBVn5S3+UaQn8xl7CtDf1ys4t7tPD+AlRZV1iAlP04LcDOUPAqU8ayOXED+h51CRxuJmhRzz2cXWXqhV21nc3qSg1B2PIcAe2MhlsNM98JEh/SuRKEq/D2Bs0SeLyfH1VHooMc9vM4wXdTBvueDPq55VB2oNg5RHrbLARR11bGbqH3OChu4dY5Wb6OWWvSSnma8GkJbCWWhce4wFoVe8SCFkRzD6p46ATnS8wh+I+jc23cQVmx3ef5mOo84nywVTigyxYo7f0INeL8lQkvNaKoHk6dP5Nx9B+gX/53j/BfO8fBScjIpdlh+2gJQ==|920

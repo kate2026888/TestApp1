@@ -13,7 +13,7 @@
           }
         }
       },
-      "32": {
+      "30": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "Mode": 2,
@@ -26,7 +26,7 @@
         }
       }
     },
-    "Count": 33
+    "Count": 31
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -61,9 +61,7 @@
     "8,3": "ログイン",
     "20,3": "ログイン",
     "23,3": "パスワードを忘れた場合",
-    "24,8": "または",
-    "26,3": "SSOでログイン",
-    "30,1": "Administratorアカウント：Administrator\nパスワード：123456"
+    "28,1": "Administratorアカウント：Administrator\nパスワード：123456"
   },
   "AttachInfos": {
     "5,3": {
@@ -147,15 +145,6 @@
         "Text": "パスワードを忘れた場合",
         "TemplateKey": "_RS_Main"
       }
-    },
-    "26,3": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "Text": "SSOでログイン",
-        "AutoExecute": true,
-        "TemplateKey": "_RS_Minor1",
-        "ForguncyAttribute": "LogIn_SSO_Button"
-      }
     }
   },
   "StyleDatas": {
@@ -208,33 +197,16 @@
       },
       {
         "FontFamily": 0,
-        "FontSize": 14.666666666666666,
+        "FontSize": 16.0,
         "Formatter": 10,
+        "HorizontalAlignment": 3,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
-        "FontSize": 16.0,
-        "Formatter": 11,
-        "Underline": false,
-        "Strikethrough": false,
-        "BorderBottom": 0
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": -999.0,
-        "HorizontalAlignment": 3,
-        "VerticalAlignment": 3
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": -999.0
-      },
-      {
-        "FontFamily": 0,
         "FontSize": 13.333333015441895,
-        "Foreground": 13,
+        "Foreground": 11,
         "Formatter": 10,
         "HorizontalAlignment": 3,
         "Underline": true,
@@ -243,7 +215,7 @@
       {
         "FontFamily": 0,
         "FontSize": 12.0,
-        "Foreground": 14,
+        "Foreground": 12,
         "Formatter": 10,
         "HorizontalAlignment": 3,
         "Underline": false,
@@ -263,15 +235,8 @@
         "@",
         "#FF7F7F7F",
         "[AUTO]General",
-        "General",
-        "#FFDCDFE6",
         "#FF538BD5",
         "Background 1 0"
-      ],
-      "Borders": [
-        {
-          "Color": 12
-        }
       ]
     },
     "CellStyles": {
@@ -284,74 +249,21 @@
       "20,3": 5,
       "23,3": 6,
       "24,3": 7,
-      "24,4": 7,
-      "24,5": 7,
-      "24,6": 7,
-      "24,7": 7,
-      "24,8": 8,
-      "24,10": 5,
-      "24,11": 7,
-      "24,12": 7,
-      "24,13": 7,
-      "24,14": 7,
-      "24,15": 7,
-      "25,3": 5,
-      "25,4": 5,
-      "25,5": 5,
-      "25,6": 5,
-      "25,7": 5,
-      "25,8": 5,
-      "25,10": 5,
-      "25,11": 5,
-      "25,12": 5,
-      "25,13": 5,
-      "25,14": 5,
-      "25,15": 5,
-      "26,3": 5,
-      "26,4": 9,
-      "26,5": 9,
-      "26,6": 9,
-      "26,7": 9,
-      "26,8": 9,
-      "26,9": 9,
-      "26,10": 9,
-      "26,11": 9,
-      "26,12": 9,
-      "26,13": 9,
-      "26,14": 9,
-      "26,15": 9,
-      "27,3": 9,
-      "27,4": 9,
-      "27,5": 9,
-      "27,6": 9,
-      "27,7": 9,
-      "27,8": 9,
-      "27,9": 9,
-      "27,10": 9,
-      "27,11": 9,
-      "27,12": 9,
-      "27,13": 9,
-      "27,14": 9,
-      "27,15": 9,
-      "28,3": 10,
-      "30,1": 11
+      "28,1": 8
     },
     "SheetStyle": {
-      "FontFamily": 0,
-      "FontSize": -999.0
+      "FontFamily": 0
     }
   },
   "Spans": [
-    "30,1,2,17",
+    "28,1,2,17",
     "12,3,2,13",
     "15,3,2,13",
-    "20,3,2,13",
-    "5,3,3,7",
-    "8,3,2,13",
     "18,3,1,13",
+    "20,3,2,13",
     "23,3,1,13",
-    "26,3,2,13",
-    "24,8,2,3"
+    "5,3,3,7",
+    "8,3,2,13"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -368,23 +280,25 @@
   "BackgroundPictures": [
     {
       "Name": "0ff17210-2337-4c02-b20c-183f048a4b20.jpg",
+      "DisplayName": "背景画像1",
       "ForguncyPictureName": "PCLoginBackground",
       "ForguncyPictureSourceType": 2,
       "StyleInfo": {
         "Fill": null
       },
       "IsAutomaticFill": false,
-      "Size": "380,660"
+      "Size": "380,620"
     },
     {
       "Name": "d822c6ed-a84e-44a2-b25e-28272e255a9c.png",
+      "DisplayName": "背景画像2",
       "StyleInfo": {
         "CornerRadius": 20.0,
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
       "Location": "20,60",
-      "Size": "340,540"
+      "Size": "340,460"
     }
   ]
-}//znMWdNWurujZcA1U4SA29asZpNVylYUtI8+fft8d/2MAnBI+VLUJtWPv59tXA0YvwQFT94yc8VSL5QQmaUDXtaMftt9IljwmbJlSXyjekt9DcPfT10SS4KkRpStn3mJY7ZikYGneq+tI6KlDwBTM5oOBUuf5yEwbuvOLzYWHjbrFAfj5Dyp6FkJVauVz5P+4khh+bP4O+YYQtCR5wtVLj9NTgbUQtRz/TGdhkzhc1gAQq/A8sP/fpx3eebPoNyT0K5hwDDIN33jtZJ51Xw1PNY89etkV0b8tE3xmQcss7Vs9D+AzYy0BCGH5ll+X7tXNz4qVmrYQtTOhE0JIATj8ZSK1s7oVNBQdw53VbQ6bvXoIK6nxOL214+5jAkY/w+EqalxdN4jHeTJR5ARYLRprO0Wnn/AeqxF+hKlPOwcwxpn7e395sgFU9ZTIl0zKliqMbS6ogLJNaJ028tSbNHejx5kWgBe0ZiYGDcdgyFnva5lg7jGYeKs236dEZS9SPi6R/2TGMR7G7GsSGlcKgkqmAudyxPpxc6UNnmSXm6aFeAl0Mp3btC8E9HCgw259CzLt5WGX31JdbxBJIjIifmjgDIdYz3yGTRUJjVRN9xS9msHRWSOIVrfnN+0N/apRWdFfR1Pz/Mgz8ZtQPn1gQsFNXmj9wf31XlMcgDk/OaVjqE+i1TTN/TSs10I+Q/dkqrNy9U60Cew8ZYMThu50Xv0ok51MOUfape7wlchRWcob4U1ePb79O07ImUFa8B3IWiF329RGJJ2JZySCIqK6V3GOEZlXEvcJXgaaEZ1tqeaaXjfj/iaBToxiPHETa+qRvuWvjfJfUGQHBdRsoHOIj/V0RHliSypHEK4B74L6TqmhH9eK3pJ7X9jqzTd51npW6PKCDkm+IcNTIPRDwPWEO0THYA==|920
+}//taevkjMATUV34Tg6lqjHlN90emBzBdMa5NoerN+PALKM3+yBDkp1T8yMWXuICTePSxaQwjamUhJtLKD3aQrMDf0DEdZcXyEcFyIn/+CmMAE11bIytHAIYeGRLPvuW89oomGCuCL/lUK5UTGicx/uptXzSEj+ozHJTmVQ0LGvo+HVWBzTUqjbyiCGJHPZIWqLe1JK6AIbQLbL3fZNKnzj5iYrRJgIWTJEvTA9iccgdw8sb2pqNHEtJUMLfgQGycTjdhD5VAA5nfG5nKDE+QWRL3cIne9s1fJo6tXSYPxGAMMy0bHI9/G0In3plUS0aDjdlOvFfXH4fBfmDNldYUQR4+hhwNfwJ3wNCse/lQp00RTUNH1ghhXfpskgU34xm6aGpa8El4XAwgsC5/QFXubVZAtj8DUWwvGGzD4V+3Qto1G52E5bqeoc7SlPKHSi2ebRY/Jy+QkkRAPqh3P+LntJn7y6ERDbqEQnYALI+pEG4zbcc1qrLUvhiY/DAi9u4maYlr/o8JOgHhy3WakFvdPbu14/VbTr68zt/1JAo1PaFKfF2/RCWEH5Tx/0i67fFo93HIS0yt/u4urLPbQMYigt8YOcX8BKYgQnptp1lEQpu24kL18bW14b7C3zL6sSsLBcYYAQBU9wdng9c4FhbgIBo3nQfwk/X2xZwmxSAnOb74lXav7OL2rnxWTrycOKEV+NvxHAAh/AFmR816iv6ldPHsaqSXBtYJUg6CyhxDdLodZ6Mz/DutMXXa33mOwfPzCSHU6ZLTp2gcDHtBLjdfBW88iQNUxOU9txW++JosCHkL5IXC/Ed6+7fX4OcyUPVBh+iAX7FXcKBhyxMNxGlnVcGLeOvv/2n7E5sfeyJIyuW9Me7Z+nXnH8vkjAQuAwnSz+r6CrNXy5vwBgxjEL2iAJIw==|920
