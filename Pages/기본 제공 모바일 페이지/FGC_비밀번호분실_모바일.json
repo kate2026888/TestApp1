@@ -1,0 +1,218 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 31
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 19
+  },
+  "Values": {
+    "5,3": "비밀번호를 잊으셨습니까?",
+    "8,3": "사용자 ID 혹은 이메일 주소를 입력해 주세요. 아래 메일발송 버튼을 클릭하신 후 이메일을 확인해 주세요. 암호를 재설정할 수 있는 링크를 포함한 이메일을 보내드립니다. 링크를 클릭하여 암호를 변경하실 수 있습니다.",
+    "16,3": "사용자 이름 및 이메일 주소",
+    "21,3": "이메일 보내기",
+    "24,3": "취소"
+  },
+  "AttachInfos": {
+    "17,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewUnderline",
+        "ForguncyAttribute": "ForgotPassword_UserOrEmail"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "21,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "이메일 보내기",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Main1",
+        "ForguncyAttribute": "ForgotPassword_Send"
+      }
+    },
+    "24,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "Text": "취소",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 24.0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "Foreground": 6,
+        "Formatter": 3,
+        "VerticalAlignment": 7,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "Foreground": 8,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "Foreground": 9,
+        "Formatter": 10
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": null,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": null,
+        "Formatter": 3,
+        "HorizontalAlignment": 11,
+        "Underline": false
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 25",
+        "[AUTO]General",
+        "Left",
+        "Bottom",
+        "Text 1 50",
+        "Top",
+        "#FF7F7F7F",
+        "Text 1 15",
+        "@",
+        "Center",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "5,3": 0,
+      "8,3": 1,
+      "16,3": 2,
+      "17,3": 3,
+      "21,3": 4,
+      "24,3": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 13.333333015441895,
+      "Foreground": 12
+    }
+  },
+  "Spans": [
+    "5,3,2,15",
+    "8,3,7,13",
+    "17,3,2,13",
+    "21,3,2,13",
+    "24,3,1,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "비밀번호를 잊으셨습니까?",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "eaa75bd0-4960-44e9-956a-15959d73017d.png",
+      "StyleInfo": {
+        "CornerRadius": 20.0,
+        "Fill": "#FFF6F6F8",
+        "Stroke": "black",
+        "StrokeThickness": 0.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "20,61",
+      "Size": "340,480"
+    }
+  ]
+}//QVDHwsqqxTXiwzpmoFyw9iK5/DV59C3AVET3UpbzPlls4cgy+4ndyA6JObL7assQqn3j+E4bQj+NbfHng7GuMe96IyCHcqj0qLnII9/gQTE3Q9n7lixcWFonxKRvTKewFL7s/EOiJyTA4fmOEbjLg2M2vcF3rT/TDAqPe3eVV9l9eblTUonPkS5CX/6F36HNIhcrPjzhO/YxbY/vkJPhDZ5RhBhQS4psHFGnfLcToRIjqFij8Y4rADB7JNzYIWqUTkJBPSv8g9YW/LwoajGS7l87PH9bOYYQPqlx6kFtfwiqDMHIGAWX51CNP8PZSNQOgPOW+aZO9dXXiMLJc2tYUR6n+jtPFHGxFTTe1kAnoc60v6rTioYAgVxbfVdkk315UFLtsiE8jsB3SPdP6CD5uNnS92ezrdP6rTkqyOgxSgb8/RA8a7iHIDTJgtPNNKFLjfZLfmbfKG0NRsIKdBjGPQC/rAC4Gky9VVRDNLPZ6ReJ1/wXB4OY0znDrGK1S5+29CqY1Y1d9zEdx/rPJ0qzufJU+qXvqu7yXtIrTKJi5cn7uGFBu4abA7Mt5/sVeu6GP/OiC3beaKy/j49ok8CUeP62DFlTJLvwjGLNfQb2bgEugm9SfwF58xgqc89f4EagivklPGOEKLnnIIzREVycAGYNDsqLFihD7hiSvs09PdxcXGO7kPtFfBBJvqeJG/tgXt1SVTZhm8f1PRxQVfL1KT8JHmq/5zp7paBUrP0d5jXz4tyiY9nRJB9fSASf/XETegMLjtfF9fyW4cVWKnQBe/yQrhXFG/lVdmCqyBSnoba3msxR4ybuegWhQxWKKO4/NqEswhU8vHwCW20yASfZLAT1npEcMR32OUUODM/YCb3d+SNYIoZB/pK+PCfHJ824p1D686IB8hDZvjO/W0HtVg==|920

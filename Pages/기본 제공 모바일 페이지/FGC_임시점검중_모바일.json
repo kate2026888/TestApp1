@@ -1,0 +1,137 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 31
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 19
+  },
+  "Values": {
+    "13,2": "웹사이트 임시 점검 중입니다. 나중에 다시 방문하여 주십시오.",
+    "16,2": "현재 사이트 업데이트 관계로 접속하실 수 없습니다. 잠시 후 다시 시도하여 주십시오."
+  },
+  "AttachInfos": {
+    "3,4": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "fgc_built-in-page-maintained.png"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "Foreground": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 24.0,
+        "FontWeight": 2,
+        "Foreground": 3,
+        "Formatter": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 6,
+        "Formatter": 7,
+        "VerticalAlignment": 8,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FF000000",
+        "Bold",
+        "Text 1 25",
+        "General",
+        "Center",
+        "#FF7F7F7F",
+        "[AUTO]General",
+        "Top"
+      ]
+    },
+    "CellStyles": {
+      "3,4": 0,
+      "13,2": 1,
+      "16,2": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 13.333333015441895,
+      "Foreground": 1
+    }
+  },
+  "Spans": [
+    "13,2,2,15",
+    "3,4,9,11",
+    "16,2,6,15"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "유지보수",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//zQ/R1onDar255lXo5cswDkDxxQaC5QFM5DIr+0BLCVDdZWSpjHHLAzOWg61S7JMnJjLTIAP/MkS1JLoidyaVC7TK1Z1WLw6RBiZ+ZMJMu+fs7XWiVJiw2lNMAH1sPA7DRZQ7cDnfuYNf2Xcl3THDGefrN/jmKS1MguRk20b7UCRDCxlOeSEomKfi+wwueDp+kuuczpHTM8FSqHLKEpfslSERdNX7M9ue4g3AeVnubLpyvua/whXIW/BG33Daf3hyp6D2AAxlXTcRGe7xwsl/pQM3RJNt7aTZl5dNSjpQYqgShDHUm3dXPZguUVDeBXm6jFcMBN5ntrl/3o0LgZbmhJOm8d4MNpCw4Luy00s2ADzuCFIg426aB6I3z9ycUA5Vzd9LpSR5q7x4dJKSGqQ6IJOqzXIVNleLGWlWthMcn5/cGLoqx/iztsgrxNj+yHHtwXrn2M+is0azesz43t53NPojXfYXjXoMVapK/NuByLnvo+U3AhI1dSvehIQc4qduru4tbj10QdDflGu0RN2Y6mJAZ33VPXsI4vUXvNvA4jNZNN+LnAEib+xATruSNVx7hCmib8glI/3WXAUpgqbRemJEjg5zvNyBtTgYsLrVOWoE0aNMYZbgeoLxy9oT+NnHuenGtTFzTdW9j9diJtwwJ5AlJzEgsVqxNCJUTK8NVySvFF0tIqAfpIgpBpEGqQobXmHCWscoyzIKEBe2HdGUJNtpQAb1h5/qD9XACDznifV0/xkiLdH06MDmoWdFx3J5KHmpEt6xzqlwfC6kk93i7W6NM/zkt6ovkVwPI/7457sbLEd/5N6hj2Gck6xPKaVmGY+p6Mh1CN/XDmwIIHM0EOsOUQJ2s+cLpaP6tlF0HOiZDAxtdisj7z9fUZor6cOmWyMLQjzbRWAs9xwJ7Y3SIg==|920

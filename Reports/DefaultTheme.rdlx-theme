@@ -5,7 +5,7 @@
     <Dark2>#042531</Dark2>
     <Light1>#FFFFFF</Light1>
     <Light2>#EAEBDE</Light2>
-    <Accent1>#0087CD</Accent1>
+    <Accent1>#1890FF</Accent1>
     <Accent2>#8BB73D</Accent2>
     <Accent3>#EBC54B</Accent3>
     <Accent4>#EA772A</Accent4>
@@ -16,13 +16,13 @@
   </Colors>
   <Fonts>
     <MajorFont>
-      <Family>Meiryo UI</Family>
+      <Family>맑은 고딕</Family>
       <Style>Normal</Style>
       <Size>10pt</Size>
       <Weight>Normal</Weight>
     </MajorFont>
     <MinorFont>
-      <Family>Meiryo UI</Family>
+      <Family>맑은 고딕</Family>
       <Style>Normal</Style>
       <Size>10pt</Size>
       <Weight>Normal</Weight>

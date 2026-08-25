@@ -1,27 +1,27 @@
 {
   "IntegrateWithOtherApplication": {
-    "Password": "M1UlbNOHyby7"
+    "Password": "HrTHk)avf*$%"
   },
   "ShareCommandContainers": [],
   "ListviewLoadingIndicatorSettings": {},
   "GlobalProperties": [],
-  "WebSitePort": 48105,
-  "UserServicePort": 12746,
+  "WebSitePort": 51013,
+  "UserServicePort": 22717,
   "StartDateFiscalYear": 4,
   "BaseOnStartingMonth": true,
   "MultipleLanguageSettings": {
     "Languages": [
       {
-        "Name": "ja",
+        "Name": "kr",
         "IsDefault": true,
-        "Description": "組み込みの日本語は削除できません。",
+        "Description": "한국어가 내장되어 있어 삭제할 수 없습니다.",
         "IsBuildIn": true,
-        "LanguageAttribute": "ja",
+        "LanguageAttribute": "ko-kr",
         "FontFamily": "Body"
       },
       {
         "Name": "en",
-        "Description": "組み込みの英語は削除できません。",
+        "Description": "영어가 내장되어 있어 삭제할 수 없습니다.",
         "IsBuildIn": true,
         "LanguageAttribute": "en",
         "FontFamily": "Calibri"

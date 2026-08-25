@@ -1,0 +1,223 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 31
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 19
+  },
+  "Values": {
+    "5,3": "이메일 알림 설정",
+    "8,3": "알림 설정 유형을 선택 하세요",
+    "22,3": "저장",
+    "25,3": "취소"
+  },
+  "AttachInfos": {
+    "10,3": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "LayoutMode": 1,
+        "ItemSpace": 14,
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "알림 없음"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "모든 변경 사항 알림"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "나를 제외한 다른 사용자가 변경을 발생 시키면 알림"
+          },
+          {
+            "Value": "3",
+            "DisplayValue": "본인이 만든 데이터 변경 시에만 알림"
+          },
+          {
+            "Value": "4",
+            "DisplayValue": "본인이 담당자로 할당된 데이터 변경 시에만 알림"
+          }
+        ],
+        "ForguncyAttribute": "MailSubscription_Choice"
+      }
+    },
+    "22,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "저장",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Main1",
+        "ForguncyAttribute": "MailSubscription_Button"
+      }
+    },
+    "25,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "Text": "취소",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 24.0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "Foreground": 6,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "Foreground": 7,
+        "VerticalAlignment": 8,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": null,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": null,
+        "Formatter": 3,
+        "HorizontalAlignment": 9,
+        "Underline": false
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 25",
+        "[AUTO]General",
+        "Left",
+        "Bottom",
+        "Text 1 50",
+        "Text 1 15",
+        "Top",
+        "Center",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "5,3": 0,
+      "8,3": 1,
+      "10,3": 2,
+      "22,3": 3,
+      "25,3": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 13.333333015441895,
+      "Foreground": 10
+    }
+  },
+  "Spans": [
+    "5,3,2,13",
+    "22,3,2,13",
+    "25,3,1,13",
+    "10,3,10,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "이메일 구독",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "63ba2154-003b-4f81-8694-d97ea891135b.png",
+      "StyleInfo": {
+        "CornerRadius": 20.0,
+        "Fill": "#FFF6F6F8",
+        "StrokeDashType": 8,
+        "Stroke": "black",
+        "StrokeThickness": 0.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "20,60",
+      "Size": "340,500"
+    }
+  ]
+}//Xm5ME6pmsbrtFF4c4vFaGMENYA2BdO4W2F93SZfw7uHm0WcnqZckdjzceS6wwX4TcvezXs/yPS3co5QOoTaV8ga1KngGaoCSZTLoPgTnNIOJy4VgNtGAySWW6VrDK3Rv3vhfqvVL0YpzeNN6/nNf1NdUaGJpuQ3l2MoEc8rAMsQBmpakparpeZgdfMJJilUtiYBrhOvmL5LwY0Tlv4g5cL8rPifkCJ5jx0JnMde8Mai6a5uhsq8aSkB8TFUe2Bd2avbkpTV2vtNCk47mXCW6zTMEYOYAnsGd/PS2uY96njFTLo9WVpjl9sT+7bkPbNib4o1CCqIPxzaoC4JsV5FC9TaLynlG2NusK7vrUwDEnTnSuCCsOwM4rhqHxjyfHpHQPOOYu2qzzVvBEMOaeD9MX6/rngWgndBp8dhdjVXld8IaiG+smZ1yORlNXdN+9TcXR2j3XsmvApnfJs12sCUI/8AE8VMxZlb51kdAiCndKbjuDjI0H3midSiAk+gn5+DyPwla3yvSSkjOFoZNqh7cVeMjHP8msyMey3ChKeROF6AEY/kYEe5H4s3hjkIogBq34preQAcH1YsQfxS35+sEvMfK5TctbkeEfTzGGDtGd5hY8LHkIO+g9tYIEJ/QYeRd+baUW7lzuwnNhfvlpTmAHcpXtawRTZilzGoVmQJb7x3vDEP6VqG/5x3DoFL3tpJWOWSD2c019mjsXe0jltHHMIIicP/dm2Md4NBUW3AxSrAvHxNyVCnYDUSBSPIHM/rlaS5p54a/Dx97da2MkRCeRQOeL+heI7BVfpXx6UN894rOI0vcR1TRbSmZzmj28nB/Y18Vfd4FqHGui6stQNa3W6q+DsjKQ45+j9F/uyfgxu4or1P83jUvDpKBUZmb6rm51wv1Fc1yjGsMoHDwE4IzHg==|920

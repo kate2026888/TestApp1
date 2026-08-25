@@ -1,0 +1,164 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 31
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 19
+  },
+  "Values": {
+    "8,3": "비밀번호 이메일 재설정이 성공적으로 완료되었습니다.",
+    "11,3": "비밀번호 재설정 이메일이 귀하의 이메일 주소로 발송되었습니다. 이메일을 받으면 이메일의 링크를 클릭하십시오. 그런 다음 팝업 페이지에 새 암호를 입력하십시오. 메시지가 배달되지 않으면 관리자에게 문의하십시오.",
+    "20,3": "FGC_로그인"
+  },
+  "AttachInfos": {
+    "20,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "FGC_로그인_모바일"
+          }
+        ],
+        "Text": "FGC_로그인",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 24.0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 6,
+        "Formatter": 3,
+        "VerticalAlignment": 7,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": null,
+        "Formatter": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 25",
+        "[AUTO]General",
+        "Left",
+        "Bottom",
+        "Text 1 50",
+        "Top",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "8,3": 0,
+      "11,3": 1,
+      "20,3": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 13.333333015441895,
+      "Foreground": 8
+    }
+  },
+  "Spans": [
+    "8,3,2,13",
+    "11,3,6,13",
+    "20,3,2,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "비밀번호 이메일 재설정이 성공적으로 완료되었습니다.",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "cd1e2a47-c776-4505-bf77-dea6447289f9.png",
+      "StyleInfo": {
+        "CornerRadius": 20.0,
+        "Fill": "#FFF6F6F8",
+        "StrokeDashType": 8,
+        "Stroke": "black",
+        "StrokeThickness": 0.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "20,120",
+      "Size": "340,360"
+    }
+  ]
+}//vjcaqHzYZ6xjygVfjlutgei0eTDv+ISLfwoTQtGtLIS7Rv15z8KG8uOGtn9Mjh7GdMlvObgOJ7qzha7M7nIs84U1VG/75it8+PJF8ff4PWJknL0bw2oDyiOQ+SIzg8ihAS7YmS2iGvaAfHs1J58YvuBxk69VmzTrDSG1XQUIjg8fV+zCX/YpBsVWi/bxWx8Pls670meuyQOO0isjRoX9739MWUmH3Zbb6SjJ9nBRpyJUyJoTp8BjncMQX6IxZIieqayenHLE2JFTSNgcDDPEb/es7aFLFZVbAkYftjpoOedmlVHZRY2kSNs8/PAZqOmG/TVlOQhBNNdiLx5SnFKEG5yhk88F/ps2X+Rx282vrzKRLOnM0zw22RMDVqzynE9na0imYJ6plOTYreDadEe4Qt13pLuTeflhn/N/fFVs8WpGsXv9xhVol6zpEfynhlywB3B4sFkPlv9roqcKuUjvdWpDSeFRe9xcGtJE5S80gZjQaK0HGhzl8yVEVQwajRsVj/tRuhxc/Xv3EdZ2EnLr1fc60kKO1KWIeqijqHOq1jXiUgJTfc4oniFikcNisxRkCqlApjhmjrNHTutqiDxI3BwrEx1QXqpQBBCOlPkX9nFIdITSY5LjJs+whkehiQuchcMH3kFxrKel9TdJELE8wNmWIgGHnw/qOFhFYpWtx17RyTAbGbbQui99xFFUnxPypICdovuXbyw9O3UYDcULjC9EPRcclGJtosJDkEbJqZx8GCiS22IeetuyOFcq/26QaD5NsJVAYqMKvTj/Tsyzu3OutQkpz6BUzLYF2az+WP4SjklldIKwk6bviCWo5WrTYIwOaiGlK608IM9UmtH8HPe6Xxt/v9y3V3YCswRu/2AxU9JLdE4lV13li90omfKP3EAu3qB3VcxZvdSqi6zPuw==|920
