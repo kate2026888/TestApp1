@@ -1,1 +1,188 @@
-[{"ModuleName":"Pages/기본 제공 페이지","ModuleType":6},{"ModuleName":"PCPage/FGC_로그인","ModuleType":1},{"ModuleName":"PCPage/FGC_401_권한없음","ModuleType":1},{"ModuleName":"PCPage/FGC_비밀번호변경","ModuleType":1},{"ModuleName":"PCPage/FGC_연결끊김","ModuleType":1},{"ModuleName":"PCPage/FGC_비밀번호분실","ModuleType":1},{"ModuleName":"PCPage/FGC_이메일알림설정","ModuleType":1},{"ModuleName":"PCPage/FGC_임시점검중","ModuleType":1},{"ModuleName":"PCPage/FGC_2단계인증_인증코드","ModuleType":1},{"ModuleName":"PCPage/FGC_2단계인증_코드확인","ModuleType":1},{"ModuleName":"PCPage/FGC_사용자정보편집","ModuleType":1},{"ModuleName":"PCPage/FGC_비밀번호재설정","ModuleType":1},{"ModuleName":"PCPage/FGC_비밀번호재설정링크보내기","ModuleType":1},{"ModuleName":"Pages/기본 제공 모바일 페이지","ModuleType":6},{"ModuleName":"MobilePage/FGC_로그인_모바일","ModuleType":2},{"ModuleName":"MobilePage/FGC_401_권한없음_모바일","ModuleType":2},{"ModuleName":"MobilePage/FGC_비밀번호변경_모바일","ModuleType":2},{"ModuleName":"MobilePage/FGC_연결끊김 (모바일)","ModuleType":2},{"ModuleName":"MobilePage/FGC_비밀번호분실_모바일","ModuleType":2},{"ModuleName":"MobilePage/FGC_이메일알림설정_모바일","ModuleType":2},{"ModuleName":"MobilePage/FGC_임시점검중_모바일","ModuleType":2},{"ModuleName":"MobilePage/FGC_2단계인증_인증코드_모바일","ModuleType":2},{"ModuleName":"MobilePage/FGC_2단계인증_코드확인_모바일","ModuleType":2},{"ModuleName":"MobilePage/FGC_사용자정보편집_모바일","ModuleType":2},{"ModuleName":"MobilePage/FGC_비밀번호재설정링크보내기_모바일","ModuleType":2},{"ModuleName":"MobilePage/FGC_비밀번호재설정_모바일","ModuleType":2},{"ModuleName":"PCPage/페이지1","ModuleType":1},{"ModuleName":"MasterPCPage/FGC_유저마스터페이지","ModuleType":3},{"ModuleName":"ApplicationSetting","ModuleType":8},{"ModuleName":"Theme","ModuleType":9},{"ModuleName":"image/기본 제공 이미지","ModuleType":37},{"ModuleName":"Image/fgc_built-in-page-401.png","ModuleType":38},{"ModuleName":"Image/fgc_built-in-page-maintained.png","ModuleType":38},{"ModuleName":"Image/fgc_built_in_page_disconnected.png","ModuleType":38},{"ModuleName":"Image/fgc_loading.gif","ModuleType":38},{"ModuleName":"Image/fgc_logo_dark.svg","ModuleType":38},{"ModuleName":"UserService","ModuleType":11},{"ModuleName":"CustomLibrary","ModuleType":12},{"ModuleName":"MapJsonFile","ModuleType":14},{"ModuleName":"DataContectionSet","ModuleType":25},{"ModuleName":"Upload","ModuleType":26},{"ModuleName":"PublishConfiguration","ModuleType":39},{"ModuleName":"Plugin","ModuleType":40},{"ModuleName":"PublishSetting","ModuleType":41}]
+[
+  {
+    "ModuleName": "Pages/기본 제공 페이지",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/FGC_로그인",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_401_권한없음",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_비밀번호변경",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_연결끊김",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_비밀번호분실",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_이메일알림설정",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_임시점검중",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_2단계인증_인증코드",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_2단계인증_코드확인",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_사용자정보편집",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_비밀번호재설정",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_비밀번호재설정링크보내기",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/기본 제공 모바일 페이지",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/FGC_로그인_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_401_권한없음_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_비밀번호변경_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_연결끊김 (모바일)",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_비밀번호분실_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_이메일알림설정_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_임시점검중_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_2단계인증_인증코드_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_2단계인증_코드확인_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_사용자정보편집_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_비밀번호재설정링크보내기_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_비밀번호재설정_모바일",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "PCPage/페이지1",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "GRAPECITY\\KateMai",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-25T07:42:45.7651495+00:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\페이지1.json",
+      "Pages\\페이지1.rd"
+    ]
+  },
+  {
+    "ModuleName": "MasterPCPage/FGC_유저마스터페이지",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "ApplicationSetting",
+    "ModuleType": 8
+  },
+  {
+    "ModuleName": "Theme",
+    "ModuleType": 9
+  },
+  {
+    "ModuleName": "image/기본 제공 이미지",
+    "ModuleType": 37
+  },
+  {
+    "ModuleName": "Image/fgc_built-in-page-401.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_built-in-page-maintained.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_built_in_page_disconnected.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_loading.gif",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_logo_dark.svg",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "UserService",
+    "ModuleType": 11
+  },
+  {
+    "ModuleName": "CustomLibrary",
+    "ModuleType": 12
+  },
+  {
+    "ModuleName": "MapJsonFile",
+    "ModuleType": 14
+  },
+  {
+    "ModuleName": "DataContectionSet",
+    "ModuleType": 25
+  },
+  {
+    "ModuleName": "Upload",
+    "ModuleType": 26
+  },
+  {
+    "ModuleName": "PublishConfiguration",
+    "ModuleType": 39
+  },
+  {
+    "ModuleName": "Plugin",
+    "ModuleType": 40
+  },
+  {
+    "ModuleName": "PublishSetting",
+    "ModuleType": 41
+  }
+]
