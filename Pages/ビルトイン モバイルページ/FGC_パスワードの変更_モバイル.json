@@ -52,18 +52,6 @@
           "DesignLengthInPixel": 10.0
         }
       },
-      "11": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "Mode": 2,
-          "MinLength": {
-            "Unit": 1
-          },
-          "MaxLength": {
-            "Value": 1.0
-          }
-        }
-      },
       "19": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
@@ -80,82 +68,81 @@
     "Count": 20
   },
   "Values": {
-    "4,3": "사용자 정보 편집",
-    "14,3": "*",
-    "14,4": "표시 이름",
-    "18,3": "*",
-    "18,4": "이메일",
-    "23,3": "저장",
-    "26,3": "취소"
+    "5,3": "パスワードの変更",
+    "9,3": "*",
+    "9,4": "現在のパスワード",
+    "13,3": "*",
+    "13,4": "新しいパスワード",
+    "17,3": "*",
+    "17,4": "新しいパスワードの確認",
+    "22,3": "パスワードの変更",
+    "25,3": "キャンセル"
   },
   "AttachInfos": {
-    "8,8": {
-      "CellType": {
-        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
-        "TemplateKey": "_RS_Shadow_EmptyText",
-        "UploadImageLimit": {
-          "IsCompressImage": true,
-          "MaxWidth": 300.0,
-          "MaxHeight": 300.0,
-          "AllowExtensions": ".png, .jpeg, .jpg, .bmp, .gif, .ico"
-        },
-        "ImagePath": "Navigation/238_user_8.svg",
-        "BuiltIn": true,
-        "Color": "Accent 1 40",
-        "ForguncyAttribute": "ChangeProfile_Picture"
-      }
-    },
-    "15,3": {
+    "10,3": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
         "SavedValidators": [
           {
             "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_NewUnderline",
-        "ForguncyAttribute": "ChangeProfile_FullName"
+        "ForguncyAttribute": "ChangePassword_OldPassword"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
       }
     },
-    "19,3": {
+    "14,3": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
         "SavedValidators": [
           {
             "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_NewUnderline",
-        "ForguncyAttribute": "ChangeProfile_Email"
+        "ForguncyAttribute": "ChangePassword_NewPassword"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
       }
     },
-    "23,3": {
+    "18,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewUnderline",
+        "ForguncyAttribute": "ChangePassword_ConfirmPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "22,3": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "Text": "저장",
+        "Text": "パスワードの変更",
         "AutoExecute": true,
         "TemplateKey": "_RS_Main1",
-        "ForguncyAttribute": "ChangeProfile_Button"
+        "ForguncyAttribute": "ChangePassword_Button"
       }
     },
-    "26,3": {
+    "25,3": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "NavigateType": "back"
-          }
-        ],
-        "Text": "취소",
+        "Text": "キャンセル",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Main"
+        "TemplateKey": "_RS_Main",
+        "ForguncyAttribute": "CancelChangePassword_Button"
       }
     }
   },
@@ -173,7 +160,6 @@
       {
         "FontFamily": 0,
         "Foreground": 6,
-        "HorizontalAlignment": 4,
         "Underline": false,
         "Strikethrough": false
       },
@@ -221,15 +207,18 @@
       ]
     },
     "CellStyles": {
-      "4,3": 0,
-      "14,3": 1,
-      "14,4": 2,
-      "15,3": 3,
-      "18,3": 1,
-      "18,4": 2,
-      "19,3": 3,
-      "23,3": 4,
-      "26,3": 5
+      "5,3": 0,
+      "9,3": 1,
+      "9,4": 2,
+      "10,3": 3,
+      "13,3": 1,
+      "13,4": 2,
+      "14,3": 3,
+      "17,3": 1,
+      "17,4": 2,
+      "18,3": 3,
+      "22,3": 4,
+      "25,3": 5
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -238,16 +227,16 @@
     }
   },
   "Spans": [
-    "15,3,2,14",
-    "19,3,2,14",
-    "23,3,2,14",
-    "26,3,1,14",
-    "8,8,5,5",
-    "4,3,2,14"
+    "5,3,2,14",
+    "22,3,2,14",
+    "25,3,1,14",
+    "18,3,2,14",
+    "14,3,2,14",
+    "10,3,2,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "사용자 정보 편집",
+    "Title": "パスワードの変更",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true,
@@ -259,7 +248,7 @@
   },
   "BackgroundPictures": [
     {
-      "Name": "daf919ca-2e76-4b75-a162-f69340598f0f.png",
+      "Name": "469b2a00-3c73-4c59-bcf4-8ed45845ba8b.png",
       "StyleInfo": {
         "CornerRadius": 20.0,
         "Fill": "#FFF6F6F8",
@@ -269,8 +258,8 @@
       },
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Location": "20,40",
-      "Size": "340,540"
+      "Location": "20,60",
+      "Size": "340,500"
     }
   ]
-}//lCgLxtBGzAMpEBs+d9s0u8Apq5bMNWJVGsE0PA7gRiLVKCTxXDSDi3DvcKuHBo60J7bWcxHkAfkRaLls3m5nydy/xEmfwj16VHFQKgtaJGOCjvUJHkRQc3cF1RO4bEJvatSycWVK8PjCPDUPijJFKrVpt1aZFcko2SbH6dNEuv7FE3cH8rwP2aFRKrCnLsh+Zf7gfJmDN64jqTwm2XHTudPYIsQ8a/kzrc3gJTpS9f/En30cKhAGaiLA316JevalMPZqC5aOoAHbxvFlRhiW8pfX0u3wqEawBEHaj1UiR1VuvgpVF41EWX69a5Vr+Qg8CukIWj04Bx7FxJTH4QXYaRHd1mNI9nX8ALAXkMZiJvxglmmFbWAqJaWqya/XB9thlKF/+HOHACzOy1kFyepOpAzxQvs8S+m4qgFukf1O6jiXEOlr7ULLq7+2QurKJP6pIWq5yh/2stYhZTi6fVI0/bLXoOD0rIqd5zyAzrzMFLdR/ve+sg+AUI9sXbBq9IRWI2Ts4djkXFpS+Mt5shJh/Y0gxz2JfZk2UJJmdYRhRARDX1dYR95HxsxFbxncXC/wI+TLteCwzVuUrLLvs9MVuMuTe7PlPS2OZ4b0gUzGaBnSGi05DluVLvrsUg2f4NjlUs6GyJT/FbyhJFRdgVVP4RxoHN9fW9M4yC2bt5JTCVUm2xhcFZ+MQt9oBB8oKbLsAE6uDirEv33qjPAH8J18l0mjoJ8lvwpeZa6nrW1SlBJLmOKvQ57cjTGO5Fdwi/vLWhFHsevfpLNs1naykZVVJHL+tCo4acqs7T3Vd/ochih064Oazq8ngCBWooyJYmww1t0CZpTqOUit1Nuk+ilTDs6WWRUOldFsdYiON66bymJCgue+1my8eNJhn4X4E0TXGE0gpca6GuQ8dYklIUER1g==|920
+}//yY2b23JOI+curDXMoVRedENp609wefWdXOiBNX2gSVW/E9eYz1yZovzBz7Ja/kDkL8fD0xN8khgHYAQ44nZla08sYrRo4DFoMWsnSejqxsx0kvqmGeMQjaxrJ02Zt+b1i97TXqBLM5uSx8t3db4QkpRTpJevN1J8H6FA1sWO847FfJqEGNp1YXPnjM9Cem/WlsKt9yQEAiOAz65Tuv7ZUFjgcwU6R26z6PKTh9okVaHKgmfa03w5ttcf68qsTrUSQ0UIkVIWFmAjdunJJEkp26YWSGNSlT0CN9TMHFFAaym0EqSK/3hXkHLYhfeYwNGVq3FtRqADz3szQ+6A+iLUbpu1wRxRC3WvUldDFjqAAWma76mO5QT1UgpXhxFT5acU6xJR+PeGVf5XbjALtcBhOldkNMc1ZZObjDNt+/4l2Bat7XMKZNqqaxPWoB4/9SSnNvcpkGwH+GGNLyGJ1Ms0wmFItkspFPVFnbMQOIS5/XFcTigl3ZZ145+93+TGX8eBmZ26kOAxmFV4ohenU8/XMXEAEyLSLc5EXDFlM4adj9hja1mhobFnt/qcWPRqDM6O3A5HFxk2l8v7DZDsuhJickn7u2lHu2utz0S7B7i+YyojstCLAbIE+Im9/2cSLEoN0pfPooiDl9Hvb/gzpENipgdU3ovS+nYTqv1eMu4L6l+nv/2/9FNXO3bUXucTevBnTXj80oPUclsTLnKev8Ravk6ivdvKjqfYO1DvM11bySHJktw0AnplYolQaW/L1wjxVo+YAiQ8lt1GyCWWRdNBjhDAHLKp7BHtYQkKoO/F70Gw8uWrHvAYFX5GD/9d7inev+3JV5qDGSBLclDUSBRNXTLr/hIrhZ9xp7SLD/lBA6gE1YE/Zca7COKL+FbN7IvRm2FUXkGxVHQylLpJCrkdZQ==|920

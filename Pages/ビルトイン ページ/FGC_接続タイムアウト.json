@@ -58,9 +58,9 @@
     "Count": 54
   },
   "Values": {
-    "15,16": "페이지 연결이 끊어졌습니다",
-    "18,16": "페이지의 오랜 유휴 시간으로 인해 애플리케이션 연결이 종료되었습니다. 계속 사용하려면 페이지를 새로고침하세요.",
-    "22,21": "페이지 새로고침"
+    "15,16": "接続タイムアウト",
+    "18,16": "一定時間操作が行われなかったため、アプリケーションは切断されました。\nボタンをクリックしてこのページを再読み込みします。",
+    "22,21": "ページの再読み込み"
   },
   "AttachInfos": {
     "4,16": {
@@ -73,7 +73,7 @@
     "22,21": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "Text": "페이지 새로고침",
+        "Text": "ページの再読み込み",
         "TemplateKey": "_RS_Main1",
         "ForguncyAttribute": "ReloadPage_Button"
       }
@@ -135,8 +135,8 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MobilePageName": "FGC_연결끊김 (모바일)",
-    "Title": "연결이 끊김",
+    "MobilePageName": "FGC_接続タイムアウト_モバイル",
+    "Title": "FGC_接続タイムアウト",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -145,4 +145,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//1X2m/3tHIh5tWIj51dmhueI4sPcPmtDuCrBb7vq13Fh4qJXonKUSi3a3hjAgbnm98vrA+Ljdf/nNRPbKprkrPnB7jX5kJe0KWkNCAgw11i7WO46hDOwQB5chrFWwjYEf4+A1dqvaOQmHDoWRHstCFXhY0GguH7E/eU5TQkqSeiUiPJEKv1XGXuUy8PwXpKa05v0krXZY6yK9tikTxbx9PLePYgyl43KOG2WUGyFtu12Gquo5eWVGpyWuFseBIHge52uAvRemHgm4XOcdRbvOsgC/+DE7nZUEg3vmrT/9i6jzhxMy2JUEUW6AJZBybCty4rPwPn0bq1GbT8uOc99OCEBVzgVpS4uK33VV0Q+Jxwf4Pxw7cJ1MlXkcH+0ii9wffSxoSL5wD8B3mxGMINUB4LqEUk+xnbvnqEz2Aukwxoh9ZJLimp/KEcgGBfn0SjMKx/WWYa3ZkG3bvGkBGggWzNdXWvFh5VJWdJcNqkI41dOIz+N3cj1jwK0v70yaFTXcr92JxB31CRAibcUMSPvC4l/0WIJenCmcIacjPmh/BCZ5ZgHHzKI2LSdwSAdLpeW/QEElTamTohkDSqkNBYybSTgkhT7BkeDOjbjjp4bsBPl4lR5kpJgZbuWkg59BAMlabrnBjv7u6eFc6ia+JbPOl93DT+zmHcHpYS7R69qYdGnCsCcicMutJuIgofRtKeyv5My2MveJbmZOJ7TX8T1rChwviM0CEo/pScKIozb7Scrqxkn5eCFP64bFYdB9AaTezeSGBGix72xmNw1NtuHk32JL0aYI/hkn/2738nTdPSEVq0ug6u4TmA7Ouwdu+dqV9PZw2m9n4bpKURcgFRgLdD6SvBl8xp9K9pqgL6NhQoK5bOE/NQIpJ2RzVJSN7yjh4czGGLWmfe4HV2fN5CgcPg==|920
+}//yo4lCnyIWSJyUpayDDi64cs8Y2q7qNdJA51mVr6uTi7/Le2ovAb/Vt+aWWfyjdLsaa5pXlWS6n1xVpOdQFWIpBL5YO41QN3T+vzwgLs98aFHJWy9T+4jJkSz/glQI0cT9ZGMmnh7klsM5zE3Ko+B3ZwWueZvhvrT2kLMAxo88knfYpStzQHJSVbJDzM2mDvn70sPsvKgWdvlAqAqhEgyYIsmctJIEyvJtfl7vR5wZLC/E/vAFi4vnrjgZG54IPBIrAvNtiVwazQnWc+xG3hee8qjjshMWVzsmtTD227s6W/rPH1pOWpPnptVSCwhdor1tI6zQX3XH1HY5v7KQNfRnj35YtaHkZBefDFBdnCccyDnqiEym2gODrK9PO8yxTdN4DAR16tXNzBawkrssOX645W7CvOW4PRlvqcRNsdqHDEVHHVJv36/knr2iYS3JfG6w3E24nfSD71ECD+ENS0v6n/X6Xk1OjcT1Fuqg8KeiszxNbFZKRgK8qVstMQPSmqGWFrcmU+iHyUbSBIS7og1nbZGA+tL/I1vSxgzwgApyjp3bqOcPSQ+u5RQixeuFDnWfdFSZr+nZN6ncf8wgXRb9xuDG6HajuD4weyEcadWzQcTgIO2GjoXVq9vQGQIhx8Hgdet+e1HxG1RMjZTmIe+XZz50FuwNACq2xkI2lEhXPgtBeoauiur0+35rYMojVQs6kAcXNbkuf8maKR9Gafyw9WkmRYrgCLsNtuzRgFiZthOV2Ru5fPJ+7bg/WR7UYDoZ1ZeNfhbaFqNsGgaO4Dw0UCJa2rLE41OgSeBDNYWppQvaJ4+nB0369Jz9pwuSFWvVbitj2DeOMlOUT/ghLafEvK23OHU67gBz+wuU1JBtJZ58KvPeBpX9S3Y7MF56JF6OvC4QVtmk6G5AjgilT3Wpg==|920

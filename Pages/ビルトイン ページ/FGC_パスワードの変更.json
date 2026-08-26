@@ -13,17 +13,22 @@
           }
         }
       },
-      "23": {
+      "7": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
+          "DesignLengthInPixel": 30.0
         }
       },
-      "25": {
+      "11": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
+          "DesignLengthInPixel": 30.0
         }
       },
-      "30": {
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "Mode": 2,
@@ -36,7 +41,7 @@
         }
       }
     },
-    "Count": 32
+    "Count": 30
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -208,6 +213,28 @@
           }
         }
       },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
       "39": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
@@ -375,34 +402,97 @@
             "Value": 1.0
           }
         }
+      },
+      "53": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
       }
     },
-    "Count": 54
+    "Count": 55
   },
   "Values": {
-    "15,16": "접근 오류",
-    "18,16": "로그인한 사용자가 필요한 권한을 가지고 있지 않습니다.",
-    "20,16": "해결 방법",
-    "22,16": "1.",
-    "22,17": "로그아웃 후 권한 있는 다른 계정으로 로그인하세요.",
-    "24,16": "2.",
-    "24,17": "페이지 뒤로가기 후 다른 링크를 선택하세요.",
-    "26,16": "3.",
-    "26,17": "웹사이트 관리자에게 문의하세요."
+    "4,20": "パスワードの変更",
+    "7,20": "*",
+    "7,21": "現在のパスワード",
+    "11,20": "*",
+    "11,21": "新しいパスワード",
+    "15,20": "*",
+    "15,21": "新しいパスワードの確認",
+    "20,20": "パスワードの変更",
+    "23,20": "キャンセル"
   },
   "AttachInfos": {
-    "4,22": {
+    "8,20": {
       "CellType": {
-        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
-        "ImagePath": "fgc_built-in-page-401.png"
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ForguncyAttribute": "ChangePassword_OldPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
-    "22,17": {
+    "12,20": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ForguncyAttribute": "ChangePassword_NewPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "16,20": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ForguncyAttribute": "ChangePassword_ConfirmPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "20,20": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "パスワードの変更",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Main1",
+        "ForguncyAttribute": "ChangePassword_Button"
+      }
+    },
+    "23,20": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "Text": "로그아웃 후 권한 있는 다른 계정으로 로그인하세요.",
+        "Text": "キャンセル",
         "TemplateKey": "_RS_Main",
-        "ForguncyAttribute": "401Login"
+        "ForguncyAttribute": "CancelChangePassword_Button"
       }
     }
   },
@@ -410,57 +500,50 @@
     "Styles": [
       {
         "FontFamily": 0,
-        "FontSize": 34.666666666666664,
-        "Foreground": 1,
-        "HorizontalAlignment": 2,
-        "VerticalAlignment": 3,
+        "FontSize": 24.0,
+        "FontWeight": 1,
+        "Foreground": 2,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
-        "FontSize": 13.333333333333332,
-        "Foreground": 4,
+        "Foreground": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "Foreground": 2,
+        "HorizontalAlignment": 4,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
         "Formatter": 5,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 3,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
-        "FontSize": 16.0,
-        "FontWeight": 7,
-        "Foreground": 1,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 3,
+        "FontSize": 14.666666666666666,
+        "Foreground": 6,
+        "HorizontalAlignment": 4,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
-        "FontSize": 13.333333333333332,
-        "Foreground": 4,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 3,
+        "FontSize": 14.666666666666666,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
-        "FontSize": 13.333333333333332,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 3,
-        "Underline": false,
-        "Strikethrough": false
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": 13.333333333333332,
-        "Foreground": 4,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 3,
-        "WordWrap": true,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 7,
         "Underline": false,
         "Strikethrough": false
       }
@@ -468,25 +551,29 @@
     "Types": {
       "Strs": [
         "Body",
+        "Bold",
         "Text 1 25",
-        "Center",
-        "Top",
-        "Text 1 50",
-        "[AUTO]General",
+        "#FFFF0000",
         "Left",
-        "Bold"
+        "@",
+        "Text 1 35",
+        "Center"
       ]
     },
     "CellStyles": {
-      "15,16": 0,
-      "18,16": 1,
-      "20,16": 2,
-      "22,16": 3,
-      "22,17": 4,
-      "24,16": 3,
-      "24,17": 5,
-      "26,16": 3,
-      "26,17": 5
+      "4,20": 0,
+      "7,20": 1,
+      "7,21": 2,
+      "7,22": 2,
+      "8,20": 3,
+      "11,20": 1,
+      "11,21": 2,
+      "12,20": 3,
+      "15,20": 1,
+      "15,21": 4,
+      "16,20": 3,
+      "20,20": 5,
+      "23,20": 6
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -495,20 +582,17 @@
     }
   },
   "Spans": [
-    "4,22,10,10",
-    "22,16,2,1",
-    "24,16,2,1",
-    "18,16,2,22",
-    "15,16,3,22",
-    "20,16,2,22",
-    "22,17,2,21",
-    "24,17,2,21",
-    "26,17,1,21"
+    "8,20,2,15",
+    "12,20,2,15",
+    "16,20,2,15",
+    "20,20,2,15",
+    "23,20,1,15",
+    "4,20,2,15"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MobilePageName": "FGC_401_권한없음_모바일",
-    "Title": "401페이지",
+    "MobilePageName": "FGC_パスワードの変更_モバイル",
+    "Title": "パスワードの変更",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -516,5 +600,21 @@
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
-  }
-}//xR+v6zg6dgMJHdVLj0UwKvwL3JeoYdtvMb0itnXabk1BbkynZ6O53+8h42+o389JWtMBhfQpgpOXt/VASZ26AQd/OP0dlmiD3TbaD3Sp7MI3/+uA8PtKJKreUQ6o5pIVb/XrfDzVEn3xQVk2RJyFg7Ig1b1E7H9YwW4O/H51cNzioCPbgYNFAEY0sKBmwG8fb5NuTgdLMK+PWb2duBQJ4fNf33J821oVxe27PSM4aBbx1N3+/RkXaCyK1k/Wl/3Y24jnRlcke8IYtKRhAuxeN/s3UDHntXNJHYpUqor9y8NK1q2G5vouKMlILecY5HJHyNH2CS3XVy3qOG1Y77oN8W3Eo+xrR5PncaAW2Mv9FZFl1KP+NXwU8jQQc0+tuyrEY4Ymwj5t+OGYPyM8JnSTZRuUZTkuSmtuKjhUAJ4mo1mnxvOnMQGa2mES1TBVOnWdEvqe6/dVd07mV5yY08keaWK0Crl9OD5yqxUGYl31sgioKgN8efZoeKQ1ZGBnw13YP9lJKlsOmH4s8y3ZQSCAlrLVJGEBH2ZMtLXm5WvwynLpFSn0M+W908Gm+jy0YFOf0YsQd/HLWIx2ZIGrQH1Fxrk7lNu5UYqiHSxTeoJNTbtOwr5W6GArkcg1OCNxskX9NY+4/mJTlWpYfutuLrWJ9GUqECR6PkzHQK5+HuGZQW1+saO1qrONUOWMaj1epOb5ATj3Pqhxn14cCvfh5wcqUJlV3ePVo7JBk4Lxqv8UcAqLSn+xFn+jyPq/BYRxUerHr2IuaGjSP7X4p7N4NTiJv0MOuijf2SxP9v0sRfeJTyfDKrW6tBTikvE0mOOsXDfDLrbtotN7UJsmHQtToT9rZmh/A8/q2nQdYH46GE88REjMevfbfZ1V65EAshHvg4bmpLsfm1zduQpcCfeeENYXgA==|920
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "BackgroundPicture2",
+      "StyleInfo": {
+        "CornerRadius": 20.0,
+        "Fill": "#FFF6F6F8",
+        "StrokeDashType": 8,
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 0.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "340,40",
+      "Size": "400,510"
+    }
+  ]
+}//OPu43bBOQ+6oAaPHjqICTUG0Dhovr0UxJhacamisXW4tcy2UPUuZZ+y4a9bn6n4DYB11prvpJaYQU3LZ8YXYPBAcaVRPdHXTKmtqM2CN01jcXoMg8pkTOjv1xV8fuvMGFfRPVi2Q2TFLWhsjrPP5SfkUGnh6lHGkRIckufJffw3ksk+kbnGFbARpDQgZOYnUYRdhmyyXFuW5sQp4XWBW729/hH7OVrYNWg6ZGgHS5V0dAv6UoqyYjGz52b+bA49sQoyCBY52ZsU6HX37qNkwBN0YY+DfZCs2gOFqI07PW2m+XQAlAaKlH6v9I+cYNKpAB1d8rXd9h8obv2L3r9GKpuonsfgMImg8tO2dv28Mo999s5TBBs8P5lrLRgLpApFGQ0QcCINq+aKYhWQkC2by7zldZGvHlluD6hPKIaPU7A4ySCCd5SiGi6yygRYelCB7t/+WY6a271z7F1tsOXX2uUpkjMgNlaC5ER+GOfafySVy4/4keacX/ISLe/3/ltu7HopnvL22G3WsICdBmnRNRLl9dLJYVUaw+KggSagXJzNByD4DcNRWRfQKemslHk2vjM7yX67zf8Leho+uYWTT9hHPa7vglS2XZgweJ3n+vyCVBpeIWAONzU90jGabLaWBUs52VcoaL29RkqhUZ9iTbiATaE6e/nuhzef1bKS9XK/Ybf5dAx9G5GWheZVkRcCZrBkrYlsDc2xKssyxBjstlE6lLRIlFJdf+KTiqy22dtaM6BhmulJQb1dGsF8mIWrcGus2tAx/LDX3zew165ZrCZtaTbhedxlOyV4Rn6/3+THHEqqf6gipOcAI/N9rAZ/7DBacnwCZOGCZmPUB5hKPhuWlq/8hBZY1zZlbn8IrDEizYcd6m1B4I8pY9RMpUzSwNMBb1/UZAobvY3XePy5uOA==|920

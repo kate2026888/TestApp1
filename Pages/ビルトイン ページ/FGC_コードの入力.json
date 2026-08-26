@@ -13,22 +13,12 @@
           }
         }
       },
-      "7": {
+      "12": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 30.0
         }
       },
-      "11": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0
-        }
-      },
-      "15": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0
-        }
-      },
-      "28": {
+      "29": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "Mode": 2,
@@ -41,7 +31,7 @@
         }
       }
     },
-    "Count": 30
+    "Count": 31
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -225,14 +215,16 @@
           }
         }
       },
-      "20": {
+      "38": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
-      "21": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
         }
       },
       "39": {
@@ -402,97 +394,52 @@
             "Value": 1.0
           }
         }
-      },
-      "53": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "Mode": 2,
-          "MinLength": {
-            "Unit": 1
-          },
-          "MaxLength": {
-            "Value": 1.0
-          }
-        }
       }
     },
-    "Count": 55
+    "Count": 54
   },
   "Values": {
-    "4,20": "비밀번호 변경",
-    "7,20": "*",
-    "7,21": "현재 비밀번호",
-    "11,20": "*",
-    "11,21": "새 비밀번호",
-    "15,20": "*",
-    "15,21": "새 암호를 확인하십시오.",
-    "20,20": "비밀번호 변경",
-    "23,20": "취소"
+    "6,20": "コードの入力",
+    "9,20": "お使いの認証アプリに表示されるコードを入力してください。",
+    "12,20": "コード",
+    "18,20": "確認"
   },
   "AttachInfos": {
-    "8,20": {
+    "13,20": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "ShowPassword": true,
         "SavedValidators": [
           {
             "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_NewLittleRoundCorner",
-        "ForguncyAttribute": "ChangePassword_OldPassword"
+        "WaterMark": "",
+        "ForguncyAttribute": "MFA_VerifyCode_Inputbox"
       },
       "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
-    },
-    "12,20": {
-      "CellType": {
-        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "ShowPassword": true,
-        "SavedValidators": [
-          {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
-          }
-        ],
-        "TemplateKey": "_RS_NewLittleRoundCorner",
-        "ForguncyAttribute": "ChangePassword_NewPassword"
-      },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
+        "NumberType": 6,
+        "CompareParamType": 2,
+        "FirstParamValue": "6",
+        "IgnoreBlank": false,
+        "ErrorMessage": "6桁のコードを入力してください。"
       }
     },
     "16,20": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "ShowPassword": true,
-        "SavedValidators": [
-          {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
-          }
-        ],
-        "TemplateKey": "_RS_NewLittleRoundCorner",
-        "ForguncyAttribute": "ChangePassword_ConfirmPassword"
-      },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "このデバイスではコードの入力は不要にする",
+        "Style": 1,
+        "ForguncyAttribute": "MFA_VerifyCode_TrustDevice"
       }
     },
-    "20,20": {
+    "18,20": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "Text": "비밀번호 변경",
+        "Text": "確認",
         "AutoExecute": true,
         "TemplateKey": "_RS_Main1",
-        "ForguncyAttribute": "ChangePassword_Button"
-      }
-    },
-    "23,20": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "Text": "취소",
-        "TemplateKey": "_RS_Main",
-        "ForguncyAttribute": "CancelChangePassword_Button"
+        "ForguncyAttribute": "MFA_VerifyCode_SubmitButton"
       }
     }
   },
@@ -503,49 +450,30 @@
         "FontSize": 24.0,
         "FontWeight": 1,
         "Foreground": 2,
-        "Underline": false,
-        "Strikethrough": false
+        "HorizontalAlignment": 3
       },
       {
         "FontFamily": 0,
-        "Foreground": 3,
-        "Underline": false,
-        "Strikethrough": false
+        "FontSize": 13.333333333333332,
+        "Foreground": 4,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 5,
+        "WordWrap": true
       },
       {
         "FontFamily": 0,
-        "FontSize": 14.666666666666666,
-        "Foreground": 2,
-        "HorizontalAlignment": 4,
-        "Underline": false,
-        "Strikethrough": false
+        "Foreground": 2
       },
       {
         "FontFamily": 0,
-        "Formatter": 5,
-        "Underline": false,
-        "Strikethrough": false
+        "Formatter": 6,
+        "HorizontalAlignment": 3
       },
       {
         "FontFamily": 0,
-        "FontSize": 14.666666666666666,
-        "Foreground": 6,
-        "HorizontalAlignment": 4,
-        "Underline": false,
-        "Strikethrough": false
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": 14.666666666666666,
-        "Underline": false,
-        "Strikethrough": false
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": 14.666666666666666,
-        "HorizontalAlignment": 7,
-        "Underline": false,
-        "Strikethrough": false
+        "FontSize": 13.333333333333332,
+        "Foreground": 7,
+        "WordWrap": true
       }
     ],
     "Types": {
@@ -553,46 +481,35 @@
         "Body",
         "Bold",
         "Text 1 25",
-        "#FFFF0000",
         "Left",
+        "Text 1 50",
+        "Top",
         "@",
-        "Text 1 35",
-        "Center"
+        "Text 1 35"
       ]
     },
     "CellStyles": {
-      "4,20": 0,
-      "7,20": 1,
-      "7,21": 2,
-      "7,22": 2,
-      "8,20": 3,
-      "11,20": 1,
-      "11,21": 2,
-      "12,20": 3,
-      "15,20": 1,
-      "15,21": 4,
-      "16,20": 3,
-      "20,20": 5,
-      "23,20": 6
+      "6,20": 0,
+      "9,20": 1,
+      "12,20": 2,
+      "13,20": 3,
+      "16,20": 4
     },
     "SheetStyle": {
-      "FontFamily": 0,
-      "Underline": false,
-      "Strikethrough": false
+      "FontFamily": 0
     }
   },
   "Spans": [
-    "8,20,2,15",
-    "12,20,2,15",
-    "16,20,2,15",
-    "20,20,2,15",
-    "23,20,1,15",
-    "4,20,2,15"
+    "6,20,2,14",
+    "16,20,1,16",
+    "13,20,2,14",
+    "18,20,2,14",
+    "9,20,2,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MobilePageName": "FGC_비밀번호변경_모바일",
-    "Title": "비밀번호 변경",
+    "MobilePageName": "FGC_コードの入力_モバイル",
+    "Title": "コードの入力",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -603,18 +520,25 @@
   },
   "BackgroundPictures": [
     {
-      "Name": "BackgroundPicture2",
+      "Name": "6f3cd4d5-8311-4395-872c-d798a3db86ae.jpg",
+      "ForguncyPictureName": "PCLoginBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Size": "1080,630"
+    },
+    {
+      "Name": "BackgroundPicture3",
       "StyleInfo": {
         "CornerRadius": 20.0,
-        "Fill": "#FFF6F6F8",
-        "StrokeDashType": 8,
-        "Stroke": "Background 1 -25",
-        "StrokeThickness": 0.0
+        "Fill": "#FFFFFFFF"
       },
-      "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Location": "340,40",
-      "Size": "400,510"
+      "Location": "340,80",
+      "Size": "400,370"
     }
   ]
-}//pdWvaO1whKhcjtzQWvyY+jBjESKKhsEw7uwUpcW/+nehaN6jnvlPi74attvObPpzJGvXhmTfMhlF7oot6tUluw19PjSefL6pYQjZffsPPkUAetmZZD0KiDK85qyvcEoLPLV+FdNJlHMcJVhYlKUDT6hDQgPgO8U3GTD0ag50L1fSWy4asxpvjTgUDYqMkHZh2dah1e29SKG5w8B94PgElwSC1T7C8+BC45iC0Qg4aojScvdz5xOHLWRN/XdWsX/iUjs/kNw+YksHD/B9gTha2u28obNkeLrM8Fja6kxkW76MFMOjrrfvV/4w25xkpLsDz7xU6hmgUv8z+duQM3oyu7Rnignka4KMnb6PrzxhKv6+ysavKf4RCxPjcNousH9PZGGvodCovdHBZgyM81vSw6n6phME7Jw09zwZfu+q/ut6KqPs5TN+6ZaBBDiosmWfQ6s9RetaA66A+7X/flEQkWG+qqcQ/rFVKpsTsbINmkB/EH3uY4KVNe2obNjVHvy6NJmhqTjD5fLRUcxIQ5Ta34yekpv5c0scBWF3FrvADpIaRbxvLSyrN/pj0HpqicUdgO95P4+L1ASRC53rzEo/EMrCWoM5/p40AZ/dqbGL77/b9549iBVw0HryydbdgT23vlMY3zmyNIOYF5HKRClal7XbFKyFGVwvKUuhaelG4r0OznKCrZcze9e/IrJ7S5bCdHix89a7/sMixIA43iy6nNrGlZgxPvyPURVByaSmPbfPGFr7m9H8Z5oPCy5mmrFxdeJufVToRHcumgeSpZz53Bsa9JoOSgg+NXI4seXZWDkZ+kYdathQnNe5gqwPzgxBRM2T60gmWJeQhkgG54kN9N71m7MpjQJZcRpg33V9YboyxS6udKtgdWB1KirXwE5a/dsRSuS3IG8Oh9A7BXNaIw==|920
+}//Tx5JNcBDVyuqA5fwCErc/9rw2Iznfyt6EWCCAmF2OmxdEg8Y6NvJmgl2Dvq7ApfRax5d3rVZ/xBl99rsOEfYmOS+h+1gxDck4xFAXi7S2Yf+k567DdRlS3bfhR+BhIJoOUrDdRYMLCoVvSdmkV7glLMiYy9CKYGBaDELdjg2IEMMPyrurcIrZleMyp2Vgxg3h9LWunPC1+a/HHS4SP/Jl7gibGNjxRSrgTq8mEuPX4UQhGPQBjq893ZG15LFD4UM5OPOmUHl7xz56j0XO4uqtyd0138xg5fVx7yL5AR0Xmxo8vLpufeQurA+nHUZxGAjXW9C+tHHzzhW4JV15AfV/IZu65Si7UTiRMB15cidd9bH90cXI7Aygq/p98SsVQdyOZL1YL2+sO8omw6lyCiwTPyPry/NYeRYQGbVaeubUz+RoDV8CawwSR7LTLJ3XxKbx8bdd/pXzuccxSdTMauRamIvOUr3L7YA/CqLlIW/xDb1mZfc+GVfoobkDURTu5MRhAYcCaafv4CzF0ruEmrleD2FCeUwv+AlVmwvz+2dIpfHNlsdJT2JdXZfT3Pro9A8L6zikN1VWlww0OsxhwH9lW2kGjR9JnwiN/NvGXocBcSuArK0RfyxKCSfZj3AwCX6zzneZoXBky2vajwCUJxusVHtR/Kx3oIOpiGSqsB1VaTkZUiCiXxc9Knrnoz6SVNjzCpkQvsA2P3WOGO65OYaaB7uhg7ahdY5t8MZAKGm/IKYIK7w7eYDo/p17L+hB82DXxSEztiaiWHwEp46g0hRSy8BPu/4DobC81Y0LDfbezUk0rAN0e7xlAQJlfbh/sIp9sYfaZO3NC1W77i8jK/ri8xi6ExI868ZVmv1DcEGrPebZyMit/dyufeIpViYUj9f+VlIaCZWK+ymAWu059cUqQ==|920

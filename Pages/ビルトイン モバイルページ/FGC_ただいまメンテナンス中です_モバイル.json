@@ -58,8 +58,8 @@
     "Count": 19
   },
   "Values": {
-    "13,2": "웹사이트 임시 점검 중입니다. 나중에 다시 방문하여 주십시오.",
-    "16,2": "현재 사이트 업데이트 관계로 접속하실 수 없습니다. 잠시 후 다시 시도하여 주십시오."
+    "13,2": "ただいまメンテナンス中です",
+    "16,2": "ご利用の皆様にはご不便おかけし、申し訳ございません。メンテナンス終了までしばらくお待ちください。"
   },
   "AttachInfos": {
     "3,4": {
@@ -124,7 +124,7 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "유지보수",
+    "Title": "ただいまメンテナンス中です",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true,
@@ -134,4 +134,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//zQ/R1onDar255lXo5cswDkDxxQaC5QFM5DIr+0BLCVDdZWSpjHHLAzOWg61S7JMnJjLTIAP/MkS1JLoidyaVC7TK1Z1WLw6RBiZ+ZMJMu+fs7XWiVJiw2lNMAH1sPA7DRZQ7cDnfuYNf2Xcl3THDGefrN/jmKS1MguRk20b7UCRDCxlOeSEomKfi+wwueDp+kuuczpHTM8FSqHLKEpfslSERdNX7M9ue4g3AeVnubLpyvua/whXIW/BG33Daf3hyp6D2AAxlXTcRGe7xwsl/pQM3RJNt7aTZl5dNSjpQYqgShDHUm3dXPZguUVDeBXm6jFcMBN5ntrl/3o0LgZbmhJOm8d4MNpCw4Luy00s2ADzuCFIg426aB6I3z9ycUA5Vzd9LpSR5q7x4dJKSGqQ6IJOqzXIVNleLGWlWthMcn5/cGLoqx/iztsgrxNj+yHHtwXrn2M+is0azesz43t53NPojXfYXjXoMVapK/NuByLnvo+U3AhI1dSvehIQc4qduru4tbj10QdDflGu0RN2Y6mJAZ33VPXsI4vUXvNvA4jNZNN+LnAEib+xATruSNVx7hCmib8glI/3WXAUpgqbRemJEjg5zvNyBtTgYsLrVOWoE0aNMYZbgeoLxy9oT+NnHuenGtTFzTdW9j9diJtwwJ5AlJzEgsVqxNCJUTK8NVySvFF0tIqAfpIgpBpEGqQobXmHCWscoyzIKEBe2HdGUJNtpQAb1h5/qD9XACDznifV0/xkiLdH06MDmoWdFx3J5KHmpEt6xzqlwfC6kk93i7W6NM/zkt6ovkVwPI/7457sbLEd/5N6hj2Gck6xPKaVmGY+p6Mh1CN/XDmwIIHM0EOsOUQJ2s+cLpaP6tlF0HOiZDAxtdisj7z9fUZor6cOmWyMLQjzbRWAs9xwJ7Y3SIg==|920
+}//sibfRLUKTy3uh7hQlCWpIUh+Hykr883kWQKDKIPkSpad8Vm7byCjOMTG+28tIjnjxa3FBo6lH6szKWy+fgNq2VecKmtyddNPXQqRl70DDjFg9B/TJEmKe7FQ2FMFu0Kbyma/vm0JvBlylY+Xt+ZfQxNSrN6cQdSaP2Wx4KnI1nLf9XMb35UpQfI4pLS9Zz8cy70+Kv4hDG8jbxA9GKLgF297WTDi2R4TcF2EQDI65uaCs+eTZSFsDkiOZPtU2d79Tet1uUTgCovbLd/7WbiqPPK9RucF9+TCVrFgEsczFxHXx29XksaKNu3RbByXBjH+MSBCNKOP+WHy5zbZYPmlW1z+fG7727ZzEp9ZaEVR8qkJgQJMwbbIe9Cs0NG7oKngQ9/vEjgTlTHiF3gI2GQGg7NMKS8oEv0CdU5+8bWTprv74AGxIq+ucbYJ/vs2cbAVX3DArPvngdEzdl9XHi0cosATAnw9MOeDKZfEanIoJnOW62p/qiLEwMwpBiTu37NnWAYnTIHnQqUgEE5O8KZCTZ+tqn8D8rxOu+Gy0zGvs3xoJd4yJNohFGmVZb0bkKoH1NVlPQZ6/zc6R8wo6WTwoLaL391IQxgFVhIFDt4fmfRTG14YvU20Ivcj5BsjzWjkmu79g8zDtPEKQOp5D7PB0cmzGWuK7heFenAgYL3LfGyenhHWskBm0lmQ1a/eYhkv62R2nuFWaVk5viBU/6pxGGJKtx8HqkcCw5x+dcca7kSN9GM9I0ZiAWwbRLyY8/Vu9R/eYcvy+pQwB/5r0qOCwtLi0yYFMCMY2yVVL0i/zOPtrWYOuf/UoS62oyz5WDS01BPZAnL3UYSwxyXMfzgpVy/8Ux7g2r5R3zH6bYJe5/UEc3UfNzubKwmmKkI6JtmBo0fgdLPt5e+JI7VfLPCQgg==|920
