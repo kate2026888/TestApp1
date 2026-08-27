@@ -50,9 +50,11 @@
         "TemplateKey": "_RS_Dark_ThemeStyle2",
         "Items": [
           {
-            "Value": "Menu  1",
-            "Text": "Menu  1",
+            "Value": "test2708",
+            "Text": "test2708",
             "IconPath": "Navigation/165_home_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
@@ -62,6 +64,9 @@
               {
                 "Value": "Menu 1_1",
                 "Text": "Menu 1_1",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
                 "IsOldMenuPath": false,
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
@@ -70,6 +75,9 @@
               {
                 "Value": "Menu  1_2",
                 "Text": "Menu  1_2",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
                 "IsOldMenuPath": false,
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
@@ -81,6 +89,8 @@
             "Value": "Menu  2",
             "Text": "Menu  2",
             "IconPath": "Navigation/183_table_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
@@ -90,6 +100,9 @@
               {
                 "Value": "Menu  2_1",
                 "Text": "Menu  2_1",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
                 "IsOldMenuPath": false,
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
@@ -98,6 +111,9 @@
               {
                 "Value": "Menu 2_2",
                 "Text": "Menu 2_2",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
                 "IsOldMenuPath": false,
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
@@ -109,6 +125,8 @@
             "Value": "Menu 3",
             "Text": "Menu 3",
             "IconPath": "Chart/363_column_chart_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
@@ -118,6 +136,9 @@
               {
                 "Value": "Menu  3_1",
                 "Text": "Menu  3_1",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
                 "IsOldMenuPath": false,
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
@@ -126,6 +147,9 @@
               {
                 "Value": "Menu  3_2",
                 "Text": "Menu  3_2",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
                 "IsOldMenuPath": false,
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
@@ -206,4 +230,4 @@
       "Size": "1280,100"
     }
   ]
-}//gjy8GzYIEtdYSCTjVtqD2t/vfUy2Wj+cRkqtf4p35OaKvHnJ+klgGR3OwMQEqO1LmCcAqCKgh2c9TPmPpKCQCIxRCxiRv7NCa+Kpn8Un1p8EDlj8qZePgsEuO3iFrrguBJJ1JbO2ICaQsQ1Bos/Q/i5DqqQlDaqOH4NqcMcPVcZSv+ikwoi03zptzWqL1CdSMQp7A30jlzuV4Nov07aZ4HjybFL9v3MU3khlMqkkUQbtWoPgMqrWkAmwoiTiH9hVYZ7PRgkyt16GMRkzya0ze3jWJJhD6cvCphDQklSb0vDE4BQQZf75kAz3qe6eiIE2I2B96omkLjltzpox9aGjt9XAs18DUdF9T+UH64PO9aC/VXc7R6LcA1O5dTRGo0DI69063iVcIjpuus/f85nqlQXAa6hLQ+yZlG1y0vmprRTm1dklsNIud4besL80RZGU5/4/e1h4T6/fUzFu4W1/j8PzFP54LRT2pgo+L4/yYd0zDVtJsGxE46+BgIzAVUrLL8VpEsV/z0JpzYzZQGQyYl/ubVMm66GtKZEG/Za4NFaBPuXIjlXpSC4U2rC4UYWePsICvT0vtAc7qojgQXOosfsbFfh/Y3SIlE4QKsJ1H/9c3v0jtCvnoOCP4A0UCyENChXKJctmWq5/JwuTkH2S7psbn0f12uj0dGLeNFUCRUZN/1zogb2DJn2T4tKjzA1x+MVUq2uaY9g8ntkqEJHFX0RPm2Wkieuf1P2y8SHD/pYT8gHSA66wNUyhtSjMojyhNm03p0hKXlQiU+lPQt+/YojzJ9swx/6ABs4FGh+iERzSI/kro7nIOexig00bYAcdqp2kQLieoo9LNKwThHrKYWBUZpY3nRj3lwhK2FQM3JIfhHIjZNQse8D0DGtAuDjqMfjEZXF6NwG5SP/KJSeJhg==|920
+}//qOMO6ONYCtmGlY/VYa+CPB4CMKHG/qQ6CSXQh7MnVyT0CDxK/igo5/JXxVymjvjrJC46KFXIbw6u/RCIX77B4qakyQoHvtCjMP5aiX9WOuxOJO3med6oqZj8DjEgnoX67c6W4QXpOGIKcQd4ZG9kGt02tcciddoDxU8XJlM0VsmyjjGrL1t6Y0RGga7malkSxFB6olIfnJxaB9C7D62JqcxgI4+y0AvYPFxlkBFrQRRhbzLiRzoT2oqVZtQM8ng0HXlZL6pnNvaCsWfUXTa8n6b+uLZDX8pz1IMkXGdWrx6eJlQuuw4RREcvAUgN0nHt0gqdddFGTZQIX5z4yukdq1S9wqSdO9U9XUOlG5Z8fWOUZtYMRshh4Tv93zklViY0GrkXPWdzeiIHumFPgXyKSQo01WmQTq7Jy/CUmlkMCrjgtdvvjWCsD0uR+AwbTDdLf1YQwcdCn7v18nJxbg/pbtVUWaW2YeYw2T1d2D67dyPi+nXHzBy5kJNTIknp8ZWIiYlUXBlthq5xxYhF2TPRJSd7eMl8QcCav0P3AfI40R33Sooxr1RHwAcANuM6kMIa/fDVsuLNs9WG8vtGSFIz972WIxBy7wMTkicvu7YjYwW8+Yct5cEc2XXbjyJjmsEWmLgJOMYJr/61uU6ZtxEMDZJUOexEQLNbI9VdWLhKYRh+WWf4m3gbCfNHNuXj2ZOGX4sCA3EDNAVPA9Lg31ujaxd/FNzW9qZ4j+p0PHmcOqQOXS1CHA2sKgoNIdZ6m2oOFG5mHMmq3VhcCdB6hSchHP3av1fQ/l/34JhZOSTy+3DLuBzEHXnDGl2bj+RlqNADX3hmnLmkP/+91z+2eqqRgBw3QqQf3bHmftQ2hegBHC/44xgjBKsfvPaVyNOqcYK9ejZdp2JJ2iFjcLbF2Fv42g==|920
