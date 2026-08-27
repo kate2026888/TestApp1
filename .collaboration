@@ -113,7 +113,17 @@
   },
   {
     "ModuleName": "MasterPCPage/MasterPage1",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "GRAPECITY\\KateMai",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-27T07:22:34.2656285+00:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\MasterPage1.json",
+      "MasterPages\\MasterPage1.rd"
+    ]
   },
   {
     "ModuleName": "ApplicationSetting",
