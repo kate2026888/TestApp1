@@ -169,7 +169,14 @@
   },
   {
     "ModuleName": "Plugin",
-    "ModuleType": 40
+    "State": 1,
+    "LockedBy": {
+      "UserName": "nancyyang",
+      "Email": "nancy.yang@developertools.com"
+    },
+    "LockDateTime": "2026-08-27T07:09:46.4434063+00:00",
+    "ModuleType": 40,
+    "ToRemoveFiles": []
   },
   {
     "ModuleName": "PublishSetting",
