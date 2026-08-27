@@ -169,7 +169,14 @@
   },
   {
     "ModuleName": "Plugin",
-    "ModuleType": 40
+    "State": 1,
+    "LockedBy": {
+      "UserName": "W2019-ENG-E\\Administrator",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-27T00:03:00.1243041-07:00",
+    "ModuleType": 40,
+    "ToRemoveFiles": []
   },
   {
     "ModuleName": "PublishSetting",
