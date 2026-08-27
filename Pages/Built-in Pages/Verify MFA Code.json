@@ -13,6 +13,11 @@
           }
         }
       },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
       "29": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
@@ -394,24 +399,47 @@
     "Count": 54
   },
   "Values": {
-    "5,20": "認証アプリの構成",
-    "8,20": "モバイル端末の認証アプリでアカウントを追加し、下のQRコードをスキャンしてください。",
-    "22,20": "次へ"
+    "6,20": "Verify Code",
+    "9,20": "Get the 6-digit code from authentication app.",
+    "12,20": "Authentication Code:",
+    "18,20": "Verify"
   },
   "AttachInfos": {
-    "11,22": {
+    "13,20": {
       "CellType": {
-        "$type": "Forguncy.BarcodeCellType, ServerDesignerCommon",
-        "CodeType": "QRCode",
-        "ForguncyAttribute": "MFA_Secret_Barcode"
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "WaterMark": "",
+        "ForguncyAttribute": "MFA_VerifyCode_Inputbox"
+      },
+      "DataValidationInfo": {
+        "NumberType": 6,
+        "CompareParamType": 2,
+        "FirstParamValue": "6",
+        "IgnoreBlank": false,
+        "ErrorMessage": "Please enter 6-digit code."
       }
     },
-    "22,20": {
+    "16,20": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "Don't ask again on this computer.",
+        "Style": 1,
+        "ForguncyAttribute": "MFA_VerifyCode_TrustDevice"
+      }
+    },
+    "18,20": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "Text": "次へ",
+        "Text": "Verify",
+        "AutoExecute": true,
         "TemplateKey": "_RS_Main1",
-        "ForguncyAttribute": "MFA_Secret_Next_Button"
+        "ForguncyAttribute": "MFA_VerifyCode_SubmitButton"
       }
     }
   },
@@ -431,6 +459,21 @@
         "HorizontalAlignment": 3,
         "VerticalAlignment": 5,
         "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 7,
+        "WordWrap": true
       }
     ],
     "Types": {
@@ -440,27 +483,33 @@
         "Text 1 25",
         "Left",
         "Text 1 50",
-        "Top"
+        "Top",
+        "@",
+        "Text 1 35"
       ]
     },
     "CellStyles": {
-      "5,20": 0,
-      "8,20": 1
+      "6,20": 0,
+      "9,20": 1,
+      "12,20": 2,
+      "13,20": 3,
+      "16,20": 4
     },
     "SheetStyle": {
       "FontFamily": 0
     }
   },
   "Spans": [
-    "5,20,2,13",
-    "8,20,2,14",
-    "22,20,2,14",
-    "11,22,10,10"
+    "6,20,2,14",
+    "16,20,1,16",
+    "13,20,2,14",
+    "18,20,2,14",
+    "9,20,2,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MobilePageName": "FGC_認証アプリの構成_モバイル",
-    "Title": "認証アプリの構成",
+    "MobilePageName": "Verify MFA Code (Mobile)",
+    "Title": "Verify Code",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -471,28 +520,25 @@
   },
   "BackgroundPictures": [
     {
-      "Name": "d754c1db-d649-40b3-8402-f58fcf892e1c.jpg",
+      "Name": "6f3cd4d5-8311-4395-872c-d798a3db86ae.jpg",
       "ForguncyPictureName": "PCLoginBackground",
       "ForguncyPictureSourceType": 2,
       "Stretch": 3,
       "StyleInfo": {
-        "Fill": "Background 1 0"
+        "Fill": null
       },
       "IsAutomaticFill": false,
-      "Size": "1080,620"
+      "Size": "1080,630"
     },
     {
-      "Name": "BackgroundPicture2",
+      "Name": "BackgroundPicture3",
       "StyleInfo": {
         "CornerRadius": 20.0,
-        "Fill": "Background 1 0",
-        "Stroke": "black",
-        "StrokeThickness": 0.0
+        "Fill": "#FFFFFFFF"
       },
-      "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Location": "340,60",
-      "Size": "400,460"
+      "Location": "340,80",
+      "Size": "400,370"
     }
   ]
-}//Lb+rlV4IGhRIYBnGpYytjvc23PWXe5ek3Zszt17kKDOhTGUUyBwogeBN8GdqLbTDeoW42KVdyenhph0FHUDMfAY7cG+CE3DnL8gTVv3cSaRBKt+qgM91VqwPgwDH8rPYmNSgpmzeyhvgSTHEhKV+Mdvx94NQAz8rWg0lGbSTNcSDTedl8/i/7TcAUP/9gWx/DPM69QM6nBtC3z1VydL4GqrkyNJ7drUhaBiMo0mIqEUkkGUvi58v7uhpDc1KFmvxqwUIRYpHXqdrJqwP5n0dK6xYWeqmKSD8Qx0F2MN/pGf/8ZxP5rXj//N3RhnNwLfgt5SUzk5RjiZBr8XyuBuxujqIf/JFlBXf5oYz+A/Gi32H5QMkK3zt7FE0ddidCFEP/C0KjPhfK4Fgdb7aN41rrcs8q4QDtfRgZTGTCSUkZuIupnkHlMKSNChees026ZpzAS5vdYI18jDaaVi6pmbDhQFljf2gK0kFl+yQTPCJs0C7TUaFKGjmcFadxZEk/RsbDLJu+7VuZ6GBUffWBEVs5Zwrct12AfeFsJy7/HcZB5qhShkt93dFgpCz5na2h/yy3a7Ta79bYS8Us0opsTeCJWsLG5WQN6B2KobCvbSKuqC75oZ50KVh/lkZtXu3gW2RLEDlu/3wg5x2nv4d3+ttc9NlXfY6Rt0q3qmtuWQXWHu4t8+5po1KuhXDcgEeUYKhFvZV/+niXpz0ISt3PjYXfEE9lVRDJAfDnovHAFRivbMAvfcstgM7nnSNcdHULqyn5vIl8jlvtYZHq5htLu4mHhoxtvHXZlbkNASnGeqt/umIxGnW+pgHD3aRYpcG/MXDYEyTeGvD8Rvaa14RYNDr9UeeiVxCGR6oVr98nFQ7Q4dNu7/mEYVqOrnI5tOnNNjUa5CUaKxnzKKnnFyLLaAUyg==|920
+}//eyFVl4IJf3bTvH1IKJTWCJf3kbo+iOCochh/neff/A3rYfcOwQjMVOAMONHWG8BW2neOnbiXBfPrBHJc3R5f5mHZK1XBEy+Ibihp7KNO0hnczQhHRmFTTV7gCyRu7hrg0949GpkM05YTiB5y2wYqUoqtkwsEXYtHLff4wL/z5h25rZ0hSgp0NbuF1i2TcQT8OpxPNS9fz7I6KODm0GoKZel+42pVkLhLOoD0WkFB0ADb9sTz5tO2GNU8+WfFEsPgoflTq2giSW3rcU7VHv2OeYTCXoHfFT4UUiezQ3V88262eEO36C8p7RD7vSISpGB4aIAbsdJ1yjdvy1tI05ZSGiMqZFtNwNZcGx9IuSmEg/NW69LMkcQ4r1UZ73Cw8KlsQU+ggtkxcwYWFkVJtJmegC0O0YV5ekwWY+qq+1QrRgerHoG2bkAslSPreNKeCuePnWlA/AdVOzXdOR8B4vG0HVunZE/47peYdBnrMrr44fhEbzzgnxP6ECWMiC1Qq4fmcK78gKaCvIJ8Wzkl1/Ndofjgiri7zCodFW4jxXP9BDLknnzFxAgqPTNs7QV5Kw2/h+CX5NSwTCfrmlL7BA6Tae4/ls0Xf3Ca2K44QAsrsA7qEMmJcnrAG9k4vjioFKdxtGLtzZqB3M9WXRifQiRZ67XdyCQeiJNRZnerZ1udl554NvCtDBPldb8WD+sjg8tko9WKVDrkWH/KL6DAyUqCQrQgHg95IMohDBS3qCcxxcK+Nm7X6/NyskVSStJWioGTzu1h6FfPkjjiXkGVWFaHvovxd74KbzI2q8Vg9v1is+ouLnjpHYOpGsOPAuodakabYq1KkTdb8B3WTgGS4h6GO9M3ynOI44rA2K8rEnckn3UOmrQzXGyQBDIvX76MAw9eOeYcYuqB4KHwdNOwW4S2yg==|920

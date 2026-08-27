@@ -13,7 +13,17 @@
           }
         }
       },
-      "29": {
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "30": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "Mode": 2,
@@ -26,7 +36,7 @@
         }
       }
     },
-    "Count": 31
+    "Count": 32
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -187,30 +197,6 @@
         }
       },
       "14": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "Mode": 2,
-          "MinLength": {
-            "Unit": 1
-          },
-          "MaxLength": {
-            "Value": 1.0
-          }
-        }
-      },
-      "15": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "Mode": 2,
-          "MinLength": {
-            "Unit": 1
-          },
-          "MaxLength": {
-            "Value": 1.0
-          }
-        }
-      },
-      "38": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "Mode": 2,
@@ -394,23 +380,29 @@
     "Count": 54
   },
   "Values": {
-    "6,20": "パスワードを忘れた場合",
-    "10,20": "パスワードリセットのためのリンクがメールで送信されました。メール受信後、そのリンクをクリックし、開いたページて新しいパスワードを入力してください。メールが届かない場合は、管理者に問い合わせてください。",
-    "18,20": "ログイン"
+    "15,16": "Access Denied",
+    "18,16": "The signed-in user does not have the required access permission.",
+    "20,16": "How to Solve:",
+    "22,16": "1.",
+    "22,17": "Sign out and sign in again with a different account.",
+    "24,16": "2.",
+    "24,17": "Click on the browser's Back button and click on a different link.",
+    "26,16": "3.",
+    "26,17": "Contact the administrator."
   },
   "AttachInfos": {
-    "18,20": {
+    "4,22": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "FGC_ログイン"
-          }
-        ],
-        "Text": "ログイン",
-        "AutoExecute": true,
-        "TemplateKey": "_RS_Main1"
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "fgc_built-in-page-401.png"
+      }
+    },
+    "22,17": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "Text": "Sign out and sign in again with a different account.",
+        "TemplateKey": "_RS_Main",
+        "ForguncyAttribute": "401Login"
       }
     }
   },
@@ -418,17 +410,56 @@
     "Styles": [
       {
         "FontFamily": 0,
-        "FontSize": 24.0,
-        "FontWeight": 1,
-        "Foreground": 2,
+        "FontSize": 34.666666666666664,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
         "FontSize": 13.333333333333332,
-        "Foreground": 3,
-        "VerticalAlignment": 4,
+        "Foreground": 4,
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "VerticalAlignment": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 7,
+        "Foreground": 1,
+        "HorizontalAlignment": 6,
+        "VerticalAlignment": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 4,
+        "HorizontalAlignment": 6,
+        "VerticalAlignment": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 6,
+        "VerticalAlignment": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 4,
+        "HorizontalAlignment": 6,
+        "VerticalAlignment": 3,
         "WordWrap": true,
         "Underline": false,
         "Strikethrough": false
@@ -437,15 +468,25 @@
     "Types": {
       "Strs": [
         "Body",
-        "Bold",
         "Text 1 25",
+        "Center",
+        "Top",
         "Text 1 50",
-        "Top"
+        "[AUTO]General",
+        "Left",
+        "Bold"
       ]
     },
     "CellStyles": {
-      "6,20": 0,
-      "10,20": 1
+      "15,16": 0,
+      "18,16": 1,
+      "20,16": 2,
+      "22,16": 3,
+      "22,17": 4,
+      "24,16": 3,
+      "24,17": 5,
+      "26,16": 3,
+      "26,17": 5
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -454,14 +495,20 @@
     }
   },
   "Spans": [
-    "10,20,6,14",
-    "18,20,2,14",
-    "6,20,2,14"
+    "4,22,10,10",
+    "22,16,2,1",
+    "24,16,2,1",
+    "18,16,2,22",
+    "15,16,3,22",
+    "20,16,2,22",
+    "22,17,2,21",
+    "24,17,2,21",
+    "26,17,1,21"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MobilePageName": "FGC_パスワードのリセット用リンクの送信_モバイル",
-    "Title": "パスワードを忘れた場合",
+    "MobilePageName": "401 (Mobile)",
+    "Title": "401",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true
@@ -469,21 +516,5 @@
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
-  },
-  "BackgroundPictures": [
-    {
-      "Name": "BackgroundPicture3",
-      "StyleInfo": {
-        "CornerRadius": 20.0,
-        "Fill": "#FFF6F6F8",
-        "StrokeDashType": 8,
-        "Stroke": "Background 1 -25",
-        "StrokeThickness": 0.0
-      },
-      "IsAutomaticStroke": false,
-      "IsAutomaticFill": false,
-      "Location": "340,80",
-      "Size": "400,360"
-    }
-  ]
-}//+jZHW/i6gU+H+epvICNYubMBDBaLDxOL1bhtU3Lr6h3l/C3/tgfvGAHYGuKLour8VdIpq7ePRR3HQukS3JE6680T/yevWuWeBcVi11ewqGN9XJSVc0A6WWTHrKPM6QlExW/WeugMYoUubMJ15C/tIuieNoCZCKnhyRumj5Oqda+kc8fQts2g/LaKOBo7t+gS3+oQ8FNgS4jck3tR1H2NED0cgrSZZSauo+i/BD7XJaJ4enTI6wVn1A1hw5j3X7XgByuusSerdK68K4TQoyl9+j2wWr6hsU23ZV7gMchPBAY0aV5oT9KTV/LCvsCy6DNQO3g3plOPS0bsswofzMCVw/tHKaVqMWhOKHoU79AeONf8rYUPh5zECTzYH7D+rdJ1nZ42Oif2vXKxqyXBoskh67cxmATJljT8wU11XQiPTUTvIS/TFmlaPBpkoHWyJqk7R1ZOIUCEZzdRVdruo130qMEPLvSLgUL7YxT7pIx+vkMmh5a8KJuTQvWLWW2UGMykRVGz8SqTRpSh2dyBWGvUcSb9nDEjOdMGazb7PbayjjiPKR+15kVt6AO++vPxMdGniILnqVDp/iPcmSl5Bimr7nv96IVro7ZZqaXcQd2pKEwyF1kibppok4JEq9p8n2BqhM439UqRqiZQ2P+p+OvLGiWD/q5tUQkMBRwOMbLD2o6F8Go2HvP71zLJ5zdUTFt92BWqvwJUIuJtiPPx17Gwwy5pmxXUo6XCKi3nZW0TkuU+eOLr1PM6jq+jOCKiCdpyIZ+M1oUJ9yDEDTuhkMduvieDAb4tnKjI0uHO9UUztYzgjOP12Lmo4lQJuk/8ixIN0OemlPEbNnPGXfKdErIaosC6MMfVYR/VXlEf46dVi9hGX5iRT6HYSU7f07JjeFYiua1wPvV0gaMWG6G4BgYhUg==|920
+  }
+}//29Vc3rHzEPo8mxdEgOhDFU4MOJ4Hv9UTpYHlWYrcoI74SF6IPCzmqe7xCuYSlsdZ4/PbfnX3VVwRKUnH0TFNqitFLuguA1mb2HdtEwDdQOQBxn5iJZJrgfDSH5W0zw0FL16SBLNBRrXzxsByBRfHbHdX7DR1bzKZulTYCiasnky2Dlzan65TY5eZXfuRQeRVzrTpVuo/cAe7fasgXgY4GC69fE3rU+oGHIazBT5ve7lriRUR6lhI4+WJBF6ep0EMU+5vqwzmR2bpTIlNhA6kcKUmFWkeHGIj1cAvO+dJM4GoHBbsAI3udIKKsw4fIoJ6DTVPtdt3ineLTjuBzb8nsWMZRwZXP8d3L4gnKj/1xp/e4pnK9XfdEBGFaRsyuZnE6TTLbPaomWxJQnAf4zvXUdaFLfz9fBrL5CehWNdPDCO/gd7ZZJXEGJugscjnRs43r02BB0gO2ryifC0basg+e3BESxjdUx5XNeipE7UJSNmdjdFH8BHP0MxTFWNGf0r0/EPdobejX9UGoyLhOKa+OtC0MLmOhnAzyNAvqAi5rU5gkD64sKdIdbIxczxbODjFkD5nT3GfXg5KlYNAA15x7K133JY8DpKWUw1P1ROubX+Pq3jK7UxJVwSZed7rCtO68OSh8L5rjieixvXpLjJvp6WV1H+hbt0cxXpdcbDXwfaNTeVovGaxTkaC4ubPGT+nbvbrSzGX1LYyFLhE/MVfECABvmbOQOdWXeWGmZup9qsJCwlYIrlzKXL9Z0JfHHX9nWlls6jJkXjz5ITcOsORF7IJntpF2jqB+t/q78xehM1EwYsbNVmiOsaHGSvJOfL9Vrmo2epkadbnSchwjKfcXSx0910/0l2JdkeMpKQJxHoTeeRjxKaIcmNOxQNXuzmST7tITTM6PJmfOdSFk7/SyQ==|920
