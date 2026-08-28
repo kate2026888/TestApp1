@@ -1,0 +1,233 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 36
+  },
+  "Cols": {
+    "Count": 64
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "fgc_logo_light.svg"
+      }
+    },
+    "2,54": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "7,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "_RS_Dark_ThemeStyle2",
+        "Items": [
+          {
+            "Value": "FORGUNCY-34910",
+            "Text": "FORGUNCY-34910",
+            "IconPath": "Navigation/165_home_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "メニュ 1_1",
+                "Text": "メニュ 1_1",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "メニュ  1_2",
+                "Text": "メニュ  1_2",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "メニュ  2",
+            "Text": "メニュ  2",
+            "IconPath": "Navigation/183_table_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "メニュ  2_1",
+                "Text": "メニュ  2_1",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "メニュ 2_2",
+                "Text": "メニュ 2_2",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "メニュ 3",
+            "Text": "メニュ 3",
+            "IconPath": "Chart/363_column_chart_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "メニュ  3_1",
+                "Text": "メニュ  3_1",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "メニュ  3_2",
+                "Text": "メニュ  3_2",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          }
+        ],
+        "MenuLevelsStyle": [
+          {
+            "Height": 45.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "Height": 32.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "7,12": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 2 0",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,54": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,1,5,10",
+    "7,12,29,52",
+    "2,54,3,10",
+    "7,0,29,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "727a4398-2932-40ee-8acf-1dcc2c6119f7",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "PCMasterBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 2,
+      "Size": "200,210"
+    },
+    {
+      "Name": "a0212117-67a3-4093-9b4e-6e0ac4ef44ad",
+      "DisplayName": "背景画像2",
+      "ForguncyPictureName": "PCMasterBanner",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "1280,100"
+    }
+  ]
+}//bIkT0yP/+CNe8lKYZiJ5gpvSKP5hi2iCixs6WppsNynIpneCTS4G05EE6Y50r/Q2zpQqyALQaW4We2IfuKsu97h/QuS9vdAvRc4wxqQPPFMGYwo2GApx1C59H2csiDGZEukhH/MNc4NdBqNk0wrHzAVGBrXPCuZN0W/73t+VKI0sB1u1myCtDubS8NETD4/1Zoyvt+8lOUuPgtj9ynwfDJE2iklD/1WYJC3nrg3bpVgLFacShc9coPThrvclkTlMQ9UwDyNlB9s6R93TbwVKGdZGs7w3sFytYXAbPfODTjcINWvmRp934pRaTQ/al06FjfcYC2i1A2SX49JuwAwyaSNwaqy9H5ePppbGcn829rIlquy6F8wBaL07OLIzNxjaur6gMgA8nMyZV7WY/hpRttpcD4lvggjCCTli1nrUGfFpeaqT8j0G1BE9FAl/o+iOpFTPwjl497Po63K8sK8zbkIvT61k6C2oVlhXB0eFAw5jILEcERu7uMDNL/+rV9ye3UnfnWXzKQnF5bZpAg3fmNq16X2xfvtsHoDy7WB2IsrEMcu9wtTN4mTbkqJLPj0lv9UnL9JcKYOTuiLPg6od+9tnVY/ITN5j0pNkFMUzXithYYEbbKy+1l8diGxFEUMvuKEtOcLYqPfZqmiiBAc7ppXhfvv98JXofLSeQCkGXdw7IsjiH0STDcmr5CAdIm3atqutb5bTz/sdIiADy2wkQ9dSpl0x06AUctP6+UwFva8hgLUNJWW8ylcVHTsMcmanAqiDh69eR6REiuWK/Nv7nC/VN/nK5+Q4GSwBluunK4+0WE57spzrN6g1LUurFnZ95kcTH6OoAzIon90ZTWDo5YEofwVjGx283aePbjsAos6+ucbYNeXJQ+usZKa8KRqWjf7eyTjDmVaBoquIAoFFig==|920
