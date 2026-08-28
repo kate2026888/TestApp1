@@ -16,13 +16,13 @@
   </Colors>
   <Fonts>
     <MajorFont>
-      <Family>Calibri</Family>
+      <Family>Meiryo UI</Family>
       <Style>Normal</Style>
       <Size>10pt</Size>
       <Weight>Normal</Weight>
     </MajorFont>
     <MinorFont>
-      <Family>Calibri</Family>
+      <Family>Meiryo UI</Family>
       <Style>Normal</Style>
       <Size>10pt</Size>
       <Weight>Normal</Weight>

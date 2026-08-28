@@ -59,47 +59,25 @@
   },
   "Values": {
     "0,0": "  ",
-    "6,3": "Verify Code",
-    "9,3": "Get the 6-digit code from authentication app.",
-    "16,3": "Authentication Code:",
-    "22,3": "Verify"
+    "6,3": "認証アプリの構成",
+    "9,3": "モバイル端末の認証アプリでアカウントを追加し、下のQRコードをスキャンしてください。",
+    "22,3": "次へ"
   },
   "AttachInfos": {
-    "17,3": {
+    "12,5": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "SavedValidators": [
-          {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
-          }
-        ],
-        "TemplateKey": "_RS_NewUnderline",
-        "WaterMark": "",
-        "ForguncyAttribute": "MFA_VerifyCode_Inputbox"
-      },
-      "DataValidationInfo": {
-        "NumberType": 6,
-        "CompareParamType": 2,
-        "FirstParamValue": "6",
-        "IgnoreBlank": false,
-        "ErrorMessage": "Please enter 6-digit code."
-      }
-    },
-    "20,3": {
-      "CellType": {
-        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
-        "Caption": "Don't ask again on this computer.",
-        "Style": 1,
-        "ForguncyAttribute": "MFA_VerifyCode_TrustDevice"
+        "$type": "Forguncy.BarcodeCellType, ServerDesignerCommon",
+        "CodeType": "QRCode",
+        "ForguncyAttribute": "MFA_Secret_Barcode"
       }
     },
     "22,3": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "Text": "Verify",
+        "Text": "次へ",
         "AutoExecute": true,
         "TemplateKey": "_RS_Main1",
-        "ForguncyAttribute": "MFA_VerifyCode_SubmitButton"
+        "ForguncyAttribute": "MFA_Secret_Next_Button"
       }
     }
   },
@@ -121,26 +99,10 @@
         "WordWrap": true
       },
       {
-        "FontFamily": 0,
-        "FontSize": 14.666666666666666,
-        "Foreground": 5,
-        "Formatter": 7
+        "FontSize": 13.333333333333332
       },
       {
-        "FontFamily": 0,
-        "Foreground": 8,
-        "Formatter": 9
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": 13.333333333333332,
-        "Foreground": 5,
-        "WordWrap": true
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": 16.0,
-        "Formatter": 7
+        "FontSize": 16.0
       }
     ],
     "Types": {
@@ -151,34 +113,28 @@
         "Left",
         "Bottom",
         "Text 1 50",
-        "Top",
-        "[AUTO]General",
-        "Text 1 15",
-        "@"
+        "Top"
       ]
     },
     "CellStyles": {
       "6,3": 0,
       "9,3": 1,
-      "16,3": 2,
-      "17,3": 3,
-      "20,3": 4,
-      "22,3": 5
+      "12,5": 2,
+      "22,3": 3
     },
     "SheetStyle": {
       "FontFamily": 0
     }
   },
   "Spans": [
-    "6,3,2,13",
-    "9,3,3,13",
     "22,3,2,13",
-    "17,3,2,13",
-    "20,3,1,13"
+    "12,5,9,9",
+    "6,3,2,13",
+    "9,3,3,13"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "Verify Code",
+    "Title": "認証アプリの構成",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true,
@@ -190,7 +146,7 @@
   },
   "BackgroundPictures": [
     {
-      "Name": "0285f038-53e6-4cbd-a7f0-bd34cb6eb9ad.jpg",
+      "Name": "b35031c0-04e0-4981-ac25-4f456a2c8361.jpg",
       "ForguncyPictureName": "PCLoginBackground",
       "ForguncyPictureSourceType": 2,
       "StyleInfo": {
@@ -200,7 +156,7 @@
       "Size": "380,620"
     },
     {
-      "Name": "446553e5-ddca-4ba5-bc1c-58b8cf3d8b8a.png",
+      "Name": "1a4f13fc-91c6-4c36-9ab6-63b98e9a7783.png",
       "StyleInfo": {
         "CornerRadius": 20.0,
         "Fill": "Background 1 0"
@@ -210,4 +166,4 @@
       "Size": "340,440"
     }
   ]
-}//Fx71IUFJF5lr91HPK4O1uWg+hasZAN/xsGv1b7U7gIMhEkJ7wGYcxP5E8HcoyJXBmRNyNlP3WZER6RulZ4lMq7XOTeqzNSIpnUpy5+51uA+tdr2do0TXQfT/kaHTB/6Zsdv+H3DGVLDkMfU4c/CtLpSmuk+BJFw7RpIoTYynrTz0rs3lxiGAfYHQCvpVHl9Rfyaf+pdeqQPXjf/768jXPHV9OR2888lLKoRPuF1SrMNhw65rQ+EKQbL/+Lhtgl7Pg0N9Wd7QrJZZ8ppreeaFCetsQxJS9JXQuLFeLZZ9uzO+rv+wrtVYgxkeZO8V7aMXTgORVFQzBA3jmXD3kenBdSXgBzlNRhuKQ59bQIcvkecSw4KZqQmTccOe2FYgMp8L2dnzmAEbPJUj8d6LxvACt/MxJUXTMPFnuWphJYBscE5PdAJ+pUwBUKzTJXk/J28rTno5DhzrOGIiwXR7YwByN5senNl1aJhlFu7V8dvnHWbUQj3ECoVm9g67V4dxQU7t80mpslIJKtgrl2c8gZEzLCvTMyXiMZMwbjP5YZO+1+SRKk82WKjZOXpA96pcueK2zOsJaNvEmTd1TxWldYLON4Dhh73QVr9jmtt5I6qhF7BrEl7sgWHal9/yArBughOJWn1vf2bxTCJvWRiQsFphFK5anDWMY8+a2T3qX4iuilX3TNM8iH/vYt3bQX0aoylxcsfoGePW2+tVl3L4y/gDYs4rh5kKYIYP5I4MYjBmXdxnc0KBfqwQqpwwfYfLqB27W81OgQk+hgwa0AYqZzJ34Td8PVtF++biIN8MmHfuBMyS+y82Fh76V0S9dBjbb2GZN4P5v1Vw7eZdW9TpIN0dNEmlwyAvXsBV4FJ3YUQUR70iEsozQRWSgcYkNjP+l5JA8vkoMfWuRRvbOnSz4JxJ6A==|920
+}//nuiVjT9NlIUBu8oda7aTyOlmxKdtkIv+j3ixnMZw+KwjCH1YLK/N0BmkrkCpGbHBjZzQLn63x3G/jP3Oh+KCb5B6mutw62xpWXr/7y1h4bVU8Y5QR7veoG51twAv5ARP7vTfPndA+zGSLurA1vDbqtFZXHbappYQwtgRw1/NaTS47AIrdBBEudh9vPkl6nWkUD8+DuJE4OYQNc5UqMqDyizR1UcBxJa48BL6d0CB68hcXRAyBJcmBx3NuDShABH5qoUSNgcxwQ+6CTsf5ci9RekU/aid89R00tLDIr9NA6vp9P8s7/PhnloOjEsw0nDhqWjIgwtcnK0mofNki6TRoMya+2CE7/kM9UC2QpnorRo9+12xy9OciAzMBT2WnCxenbuZwWXf6vOr0ZU49OeDahniv0JcNU+V1JRrDy9xI6FbO9FHcuyCqVWiMFi2VGZgS8QnE/5HH/jH1nkZHcogW69tj0bnSywBdNRrxuVfMAYjJfebtT/TblElSwSuf8rDd2B/dNTYQ4droTHVSTWo3xR3caaVaFKNAsC6ttm5NBR5USkcV7GBFEo1kE/6Zr/ORPpUun5yezwZZbbAPZ7HxXyFoBO79ru6B2kygxy2o57V4BrArM9/fxt/iqrncYv6YWTj3oPwCtN2fjM0jnBVyzy6R0YQrbC6TnUpa0xx0Nd8T49149tLYRi3mpv0rRLSsbwCANhJBhqVN6oAv8u8XXzfJaMq5QwMVILr+mSDuznWfffJ5Na+oUI/rr5eMHNYNXBvBAva6N2cxLFT8WtXugvElFQUFjLDZ2LFIvbW7XrIS1qRv6x4l+nsWUbxGa7vfHkQrwr+s21gwz0ZJQebNByUUN23e9sD30RXZIspN4X2npZ+g8r4+meIdNiZHNVRHSl4BTszWAjnlsPKhqPriA==|920

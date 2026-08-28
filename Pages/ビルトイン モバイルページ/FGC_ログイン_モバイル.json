@@ -58,10 +58,10 @@
     "Count": 19
   },
   "Values": {
-    "8,3": "Welcome to login",
-    "20,3": "Sign in",
-    "23,3": "Forgot Password",
-    "28,1": "Default Account: Administrator\nDefault Password: 123456"
+    "8,3": "ログイン",
+    "20,3": "ログイン",
+    "23,3": "パスワードを忘れた場合",
+    "28,1": "Administratorアカウント：Administrator\nパスワード：123456"
   },
   "AttachInfos": {
     "5,3": {
@@ -86,7 +86,7 @@
         },
         "IconSize": 18.0,
         "TemplateKey": "_RS_NewUnderline",
-        "WaterMark": "Please enter user name",
+        "WaterMark": "ユーザー名を入力",
         "ForguncyAttribute": "LogIn_Username"
       },
       "DataValidationInfo": {
@@ -109,7 +109,7 @@
         },
         "IconSize": 18.0,
         "TemplateKey": "_RS_NewUnderline",
-        "WaterMark": "Please enter password",
+        "WaterMark": "パスワードを入力",
         "ForguncyAttribute": "LogIn_Password"
       },
       "DataValidationInfo": {
@@ -119,7 +119,7 @@
     "18,3": {
       "CellType": {
         "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
-        "Caption": "Stay signed in",
+        "Caption": "ログインしたままにする",
         "Style": 1,
         "ForguncyAttribute": "LogIn_RememberMe"
       }
@@ -127,7 +127,7 @@
     "20,3": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "Text": "Sign in",
+        "Text": "ログイン",
         "AutoExecute": true,
         "TemplateKey": "_RS_Main1",
         "ForguncyAttribute": "LogIn_Button"
@@ -139,10 +139,10 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "Forgot Password (Mobile)"
+            "PageName": "FGC_パスワードを忘れた場合_モバイル"
           }
         ],
-        "Text": "Forgot Password",
+        "Text": "パスワードを忘れた場合",
         "TemplateKey": "_RS_Main"
       }
     }
@@ -267,7 +267,7 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "Sign in",
+    "Title": "ログイン",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "IsBuiltInPage": true,
@@ -299,4 +299,4 @@
       "Size": "340,460"
     }
   ]
-}//A8eZSa0+eFzBCIwwqLUDJbaGsVDPQhPheR7iOMq4xrUcPA3XlpI4LPLAktYMiwhJgePHXKPvBZRWfOhpmHgyHmySBN9O/lp6q7aXjLDuImjWsVXoNtR3T9QuNQqCbbTtVOz1ISGB/05FaZODzD6hP3Qp37FlTXvuDDDebJ1/iyBEL/G7zGVoA9IVQh6ax26fI4GXCvaiy2x1WnfK3IrQFR4Tu6SGR6rt7LGZM2vsaf2f8unGZbPajipsXZ8LyKf2HAYgFZ6zHrCyNyHmbcYSDikWkVlXgxDJZV7p1FwG1o0GJrVVa7n6OeVLpHEloShiHDKsXH3ZS4aXh0TIVK8o+RSMdDgBOIv+HbvQTxwwvCNIdWPGXJSrlUCJTIeX1Fh1bPtmjmRajsdq/I7wz8fDECUXZBYeiyZxJrn309d0Sh3rW/LdT8gfgyEY5+Jc+0+BwRe2HalgX1NKgPIZKLfU363BPFXjuH/AeSoP9poVAwB3oTV8dd5yG28G4WYz2m0sKq7EQNz4ToEa+FhufaubMnTX/UAEqP2AUjqv9kEU0H93LWjGLhWYmT6E/I9EE9zrmPealQ8xfR9sy8C5ZlvJjrdJpu5GxdpPxgk+Yu6vf8XDnSMnLhnRRu8Oxppu52K+oUCjuG8WY7Jm0+Ca9b0+2OdbJqLJZnPRhLATwJWscNvCJT65qPO9ZuptzWrLRdiHLh0xOWCUomCjQQbGz+lUpPNdYfJ+X4ksWw3bivjk1V1aIzVFwjp3mp8YvGsdPv4lztTnDXPD8faOJSL6sSgY7YBCGAmgTkbt2EmbCtEp4wInmX7LGOnJnY6rI/ktyYrD4kcupEqs1pzLVGmqcfQpoklAVz7x1qRrG/orsDc+aNMdEW2wlkSyj2ax8gks7+wstxmBkzl8w+g2Zmtqa2HTVg==|920
+}//+gGuOmwh4wbND0z9B3GK7GBs6tWILWoIvOfaQDoxpnphb+jNtLia8ipLUYmnlawaptEGsJuulgL7MkHlLlot5YW6PxecRVSWU23nnMH+uGc24AR6YHVDDJ0kVbroKlLrrpuHSIEgnUpSA8qJNEk/1SdVtA7zJEFJXBubN5Mkjs/bEjTjAK474lllfudsBNr1WRtVj+Lm6bNEIGgjyQGfXuAiAPvf/N+0AMK0LqJOHfhpX/qM9pxX5/spHmwE7TCt+JkFadQov/R9YnwaJNizyFS9+lp1wV9ZQAughGXLqAyEufSHj+ggerSUWaQpqy5h49cDpS+0Sv9XeVG/dhdkJ8mLORNAP3qYjizeU2nQdOqWjJMjX/az3v4oIgSEM2dLQvz3sY7V9f412tyPMAYjOZ7c1pxXfwjegVs6FN+IWtwCIOzm1gZmscILPSHTO0ubRGJDj7n/RJDMSkhM6CQk/Dqf0O2Rlpi4Gx/0yFgwu7X9fAhZBIQRHH2wKeJhhctnwTEGxwrsGTjQsVONoccaofabfvhAOv+cTLXmYFFq/dQWBFIDsmXuJsaapyeLO0jl0Oj9OCuEXUsgoYHnIu0WcNVDUmJOW51bYqHN3YZTlksxTJ94LqbmRtGjHIjqzYp3zR4punbq5u/bJp248fiUrtB5E8tUYpd6Gv+nONLQPyrZmr1rIUt/nX+yNcAMuIMFXodKfEZ1hfqUzeeQwvkMP4JzPJyt9DQ7RX0ZgG0LNi8eZDQMqI9gow6DpLIm2sjgMLbPULdsltrCfiw+usQGzPrhh6fBMTS1rdnpEffeN83brLDO9rPf8fNa02MePjzzzyqETj6cR6U14XsHeEiT6W1h1+j+5Rb3gbWZ2JD5lsQjpa7B1RFqXjU5cpGuBmxQ2nSREz7gx7HOf3Opl9Uj/w==|920
